@@ -3,6 +3,14 @@
 # category: one of Award, Funding, Paper, People, Talk, Service
 # pub: (optional) a publication ID from publications.yml, e.g. J25
 # ------------------------------------------------------------------
+- date: 2026-11-22
+  category: Paper
+  text: Journal paper led by Oluwasegun Akinniyi has been accepted in the IEEE/ASME Transactions on Mechatronics.
+  pub: J27
+
+- date: 2026-11-19
+  category: Funding
+  text: The lab received the College Opportunity for Research Equipment (CORE) support for the Exo-H3 full lower-limb robotic exoskeleton.
 
 - date: 2026-11-11
   category: Service
@@ -35,7 +43,7 @@
   text: The lab received its first NSF award ($525,021) for FDT-BioTech, a digital twin for personalized stroke gait rehabilitation with lower-limb exoskeletons.
 
 - date: 2026-07-23
-  category: Service
+  category: Funding
   text: Dr. Zhang was selected for the SEC Faculty Travel Program and ORED travel funding for 2026–2027.
 
 - date: 2026-06-23
@@ -125,7 +133,7 @@
   pub: B1
 
 - date: 2024-10-28
-  category: Talk
+  category: Service
   text: The lab was highlighted at UA's 2024 Faculty Research Showcase.
 
 - date: 2024-09-18
@@ -138,7 +146,7 @@
   text: Dr. Zhang was selected as Secretary Select of the ASME DSCD Mechatronics Technical Committee.
 
 - date: 2024-07-18
-  category: Service
+  category: Funding
   text: Dr. Zhang was selected for SEC/ORED travel funding for 2024–2025.
 
 - date: 2024-06-28
@@ -158,12 +166,12 @@
 
 - date: 2024-04-21
   category: Paper
-  text: Oluwasegun Akinniyi's paper on a cable-driven robotic waist assist device was accepted at AIM 2024.
+  text: Oluwasegun Akinniyi's conference paper on a cable-driven robotic waist assist device was accepted at AIM 2024.
   pub: C16
 
 - date: 2024-01-30
   category: Service
-  text: Dr. Zhang was appointed affiliated Assistant Professor in the Department of Chemical and Biological Engineering.
+  text: Dr. Zhang was appointed as an affiliated Assistant Professor in the Department of Chemical and Biological Engineering.
 
 - date: 2024-01-22
   category: People
