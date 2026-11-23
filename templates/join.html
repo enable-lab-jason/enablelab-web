@@ -17,9 +17,6 @@
         <p>{{ pos.text }}</p>
       </article>
       {% endfor %}
-      <h3>What to include in your email</h3>
-      <ul class="check-list">{% for item in site.join.email_checklist %}<li>{{ item }}</li>{% endfor %}</ul>
-      <p><a class="btn btn-primary" href="mailto:{{ site.contact.email }}?subject=Prospective%20Ph.D.%20student%20inquiry">Email Dr. Zhang</a></p>
 
       <h2>Current UA students</h2>
       <p>{{ site.join.current_students }}</p>
