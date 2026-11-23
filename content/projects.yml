@@ -71,10 +71,10 @@ projects:
     funding: Paralyzed Veterans of America Education Foundation (FY2026)
     publications: []
     images:
-      - src: images/FES-clcying.jpg
+      - src: images/FES-cycling.jpg
         alt: Experimental illustration of hybrid FES and motorized cycling rehabilitation.
         caption: Experimental illustration.
-      - src: https://sites.ua.edu/enablelab/files/2026/02/ChatGPT-Image-Feb-5-2026-02_32_07-PM-1024x594.png
+      - src: images/FES-cycling2.png
         alt: Pilot results of hybrid cycling rehabilitation training.
         caption: Results illustration.
 
