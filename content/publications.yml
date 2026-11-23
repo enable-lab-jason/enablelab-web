@@ -25,6 +25,12 @@ chapters:
     doi: 10.1007/978-3-031-66656-8_4
 
 journals:
+  - id: J27
+    authors: O. Akinniyi, Y. Chen, P. Zhao, D. Martelli, and Q. Zhang*
+    title: A Modular Cable-Driven Pelvic Robot for Rehabilitation Training: Design, Adaptive Control, and Preliminary Biomechanical Characterization
+    venue: IEEE/ASME Transactions on Mechatronics
+    year: 2026
+    status: accepted
   - id: J26
     authors: O. Akinniyi, Y. Chen, J. Reed, P. Zhao, D. Martelli, and Q. Zhang*
     title: Plantarflexor Activation and Muscle Architectural Responses During Reactive Stepping under Waist-Pull Perturbations
