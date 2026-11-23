@@ -7,7 +7,7 @@ short_name: ENABLE Lab
 full_name: Enhanced NeuroRobotics Autonomy and Biomechanical Engineering Lab
 university: The University of Alabama
 department: Department of Mechanical Engineering
-college: College of Engineering
+college: Stylinger College of Engineering
 
 # Used for search engines and link previews. The GitHub Action fills in
 # the real address automatically; you only need to change this if you
@@ -15,10 +15,8 @@ college: College of Engineering
 url: https://example.github.io/enablelab-website
 
 description: >-
-  The ENABLE Lab at The University of Alabama develops wearable robots,
-  neuromuscular sensing and personalized control strategies that restore
-  mobility for older adults and people with stroke, spinal cord injury and
-  multiple sclerosis.
+  The ENABLE Lab at The University of Alabama develops wearable robots, rehabilitation robotics, neuromusculoskeletal modeling, and personalized control strategies that enhance mobility economy, restore
+  gait function or balance recovery for older adults and people with mobility deficits.
 
 mission: >-
   We develop robotic devices and control strategies that provide
@@ -27,12 +25,11 @@ mission: >-
 intro:
   - >-
     Our goal is to improve quality of life for older adults and people living
-    with mobility deficits caused by stroke, spinal cord injury and multiple
-    sclerosis.
+    with mobility deficits caused by stroke, spinal cord injury, and so on.
   - >-
-    The lab brings together biomechanics, neuromuscular modeling and control,
+    The lab brings together biomechanics, neuromusculoskeletal modeling and control,
     and human-centered artificial intelligence. We build wearable and
-    rehabilitation robots, sense muscle activity with surface EMG and
+    rehabilitation robots, sense muscle activity with surface electromyography and
     ultrasound imaging, and design controllers that adapt assistance to each
     person.
 
@@ -46,7 +43,7 @@ research_areas:
   - name: Human–robot interaction
     text: Motion intent detection and assistance personalized to each user.
   - name: Artificial intelligence
-    text: Reinforcement learning, deep learning and sensor fusion of biosignals.
+    text: Reinforcement learning, deep learning, and sensor fusion of biosignals.
 
 hero_image:
   src: https://sites.ua.edu/enablelab/files/2025/01/labspace.png
