@@ -46,11 +46,11 @@ research_areas:
     text: Reinforcement learning, deep learning, and sensor fusion of biosignals.
 
 hero_image:
-  src: https://sites.ua.edu/enablelab/files/2025/01/labspace.png
+  src: images/LabSpace.png
   alt: The ENABLE Lab research space in the Science and Engineering Research Center.
 
 video:
-  src: https://sites.ua.edu/enablelab/files/2025/02/my_movie_837.mp4
+  src: images/Media1.mp4
   title: A look inside the ENABLE Lab
 
 # Funders shown on the home page and in the footer.
