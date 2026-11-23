@@ -1,0 +1,116 @@
+# ------------------------------------------------------------------
+# Site-wide settings. Edit text here; the site rebuilds automatically
+# after you commit the change on GitHub.
+# ------------------------------------------------------------------
+
+short_name: ENABLE Lab
+full_name: Enhanced NeuroRobotics Autonomy and Biomechanical Engineering Lab
+university: The University of Alabama
+department: Department of Mechanical Engineering
+college: College of Engineering
+
+# Used for search engines and link previews. The GitHub Action fills in
+# the real address automatically; you only need to change this if you
+# move to a custom domain (for example https://enablelab.ua.edu).
+url: https://example.github.io/enablelab-website
+
+description: >-
+  The ENABLE Lab at The University of Alabama develops wearable robots,
+  neuromuscular sensing and personalized control strategies that restore
+  mobility for older adults and people with stroke, spinal cord injury and
+  multiple sclerosis.
+
+mission: >-
+  We develop robotic devices and control strategies that provide
+  personalized assistance and help people overcome mobility challenges.
+
+intro:
+  - >-
+    Our goal is to improve quality of life for older adults and people living
+    with mobility deficits caused by stroke, spinal cord injury and multiple
+    sclerosis.
+  - >-
+    The lab brings together biomechanics, neuromuscular modeling and control,
+    and human-centered artificial intelligence. We build wearable and
+    rehabilitation robots, sense muscle activity with surface EMG and
+    ultrasound imaging, and design controllers that adapt assistance to each
+    person.
+
+research_areas:
+  - name: Wearable technologies
+    text: Hip, ankle and hand exoskeletons and soft wearable interfaces.
+  - name: Robotics and controls
+    text: Adaptive, Lyapunov-based and learning-based control of assistive robots.
+  - name: Biomedical devices
+    text: Functional electrical stimulation, hybrid cycling and robotic ultrasound.
+  - name: Human–robot interaction
+    text: Motion intent detection and assistance personalized to each user.
+  - name: Artificial intelligence
+    text: Reinforcement learning, deep learning and sensor fusion of biosignals.
+
+hero_image:
+  src: https://sites.ua.edu/enablelab/files/2025/01/labspace.png
+  alt: The ENABLE Lab research space in the Science and Engineering Research Center.
+
+video:
+  src: https://sites.ua.edu/enablelab/files/2025/02/my_movie_837.mp4
+  title: A look inside the ENABLE Lab
+
+# Funders shown on the home page and in the footer.
+funding:
+  - sponsor: National Science Foundation
+    project: FDT-BioTech digital twin for stroke gait rehabilitation
+    amount: "$525,021"
+    year: 2026
+  - sponsor: Paralyzed Veterans of America Education Foundation
+    project: Hybrid cycling rehabilitation training
+    year: FY2026
+  - sponsor: DHPRC Pilot & Feasibility Program
+    project: Pressure injury monitoring with ultrasound
+    amount: "$37,500"
+    year: 2026
+  - sponsor: UA Division of Research, Crimson Catalyst
+    project: Pitch competition award and People's Choice Award
+    amount: "$35,000"
+    year: 2026
+
+contact:
+  name: Qiang (Jason) Zhang, Ph.D.
+  title: Assistant Professor, Department of Mechanical Engineering; Affiliated Faculty, Department of Chemical and Biological Engineering
+  office: SERC 3011
+  lab: SERC 3041 and SERC 3032
+  building: Science and Engineering Research Center (SERC)
+  city: Tuscaloosa, AL 35401
+  phone: 205-348-0643
+  email: qiang.zhang@ua.edu
+  map_url: https://www.google.com/maps/search/?api=1&query=Science+and+Engineering+Research+Center+University+of+Alabama+Tuscaloosa
+
+profiles:
+  orcid: https://orcid.org/0000-0002-8806-9672
+  scholar: https://scholar.google.com/citations?user=FczBCGAAAAAJ&hl=en
+  researchgate: https://www.researchgate.net/profile/Qiang-Zhang-37
+  cv: https://alabama.box.com/s/n8xydjduyz34s6ciingbysml67mmcjz3
+
+old_site: https://sites.ua.edu/enablelab/
+
+# Join Us page
+join:
+  intro: >-
+    We welcome motivated students who want to build robots that help people
+    move. Our team combines mechanical, electrical, biomedical and computer
+    engineering with neuroscience.
+  positions:
+    - title: Ph.D. position (open)
+      text: >-
+        The ENABLE Lab currently has one open Ph.D. position. If you are
+        interested, email Dr. Zhang at qiang.zhang@ua.edu.
+  # The checklist below was added during the redesign — edit as needed.
+  email_checklist:
+    - Your CV
+    - A short statement of the research topics that interest you and the project(s) above that fit them
+    - Transcripts (unofficial copies are fine for a first contact)
+  current_students: >-
+    UA undergraduate and graduate students are welcome to visit our research
+    projects in the lab with Dr. Zhang's permission. Many of our undergraduate
+    researchers join through the Randall Research Scholars Program, the Blount
+    Scholars Program or senior capstone design.

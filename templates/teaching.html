@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block content %}
+<header class="page-head">
+  <div class="wrap">
+    <h1>Teaching</h1>
+    <p class="lede">{{ teaching.intro }}</p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="wrap">
+    <h2>Courses</h2>
+    <ul class="course-list">
+      {% for c in teaching.courses %}
+      <li class="course">
+        <p class="course-code">{{ c.code }}</p>
+        <div>
+          <h3>{{ c.title }}</h3>
+          <p class="course-meta">{{ c.level }}, {{ c.institution }}</p>
+          {% if c.description %}<p>{{ c.description }}</p>{% endif %}
+          <p class="course-terms">Taught {{ c.terms | map(attribute='term') | join(', ') }}</p>
+          {% if c.syllabus %}<p><a class="text-link" href="{{ c.syllabus }}">Syllabus</a></p>{% endif %}
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap narrow">
+    <h2>Teaching record</h2>
+    <div class="table-wrap">
+      <table class="data-table">
+        <caption class="visually-hidden">Courses taught by term, with enrollment</caption>
+        <thead><tr><th scope="col">Term</th><th scope="col">Course</th><th scope="col" class="num">Students</th></tr></thead>
+        <tbody>
+          {% for t in terms %}
+          <tr><th scope="row">{{ t.term }}</th><td>{{ t.code }} {{ t.title }}{% if t.institution != site.university %} ({{ t.institution }}){% endif %}</td><td class="num">{{ t.enrollment }}</td></tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block content %}
+<header class="page-head">
+  <div class="wrap">
+    <h1>Education &amp; Outreach</h1>
+    <p class="lede">{{ outreach.intro }}</p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="wrap">
+    <h2>Programs</h2>
+    <ul class="program-list">
+      {% for p in outreach.programs %}
+      <li><h3>{{ p.name }}</h3><p>{{ p.text }}</p></li>
+      {% endfor %}
+    </ul>
+    <p class="program-cta"><a class="btn btn-ghost" href="mailto:{{ site.contact.email }}?subject=Lab%20tour%20or%20STEM%20demo%20request">Request a lab tour or STEM demo</a></p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <h2>Events and highlights</h2>
+    <ol class="timeline">
+      {% for ev in outreach.events %}
+      <li class="event">
+        <div class="event-date"><time datetime="{{ ev.date }}">{{ ev.label }}</time><span class="event-kind">{{ ev.kind }}</span></div>
+        <div class="event-body">
+          <h3>{{ ev.title }}</h3>
+          <p>{{ ev.text }}</p>
+          {% if ev.images %}
+          <ul class="gallery" aria-label="Photos: {{ ev.title }}">
+            {% for im in ev.images %}
+            <li><a href="{{ img(im.src) }}" class="gallery-item"><img src="{{ img(im.src) }}" alt="{{ im.alt }}" loading="lazy"></a></li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+        </div>
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>
+
+<dialog class="lightbox" aria-label="Photo viewer">
+  <img src="" alt="">
+  <p class="lightbox-caption"></p>
+  <button type="button" class="lightbox-close">Close</button>
+</dialog>
+{% endblock %}

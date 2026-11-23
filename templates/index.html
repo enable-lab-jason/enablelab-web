@@ -1,0 +1,130 @@
+{% extends "base.html" %}
+{% from "macros.html" import pub_entry with context %}
+{% block content %}
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <p class="hero-affil">{{ site.department }}, {{ site.university }}</p>
+      <h1 class="hero-title">Enhanced NeuroRobotics Autonomy and Biomechanical Engineering Lab</h1>
+      <p class="hero-mission">{{ site.mission }}</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="{{ url('research/') }}">Explore our research</a>
+        <a class="btn btn-ghost" href="{{ url('join/') }}">Join the lab</a>
+      </div>
+    </div>
+    <figure class="hero-figure">
+      <img src="{{ img(site.hero_image.src) }}" alt="{{ site.hero_image.alt }}" width="960" height="640">
+    </figure>
+  </div>
+  <svg class="signal" viewBox="0 0 1200 90" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+    <path class="signal-line" d="M0 60 H140 L150 56 L156 66 L162 48 L168 70 L174 40 L180 74 L186 30 L192 78 L198 44 L204 66 L210 52 L218 62 L226 58 H420 C470 58 490 22 540 22 S610 70 660 62 H760 L768 57 L773 68 L779 44 L785 72 L791 26 L797 80 L803 36 L809 70 L815 50 L823 64 L831 58 H1000 C1040 58 1060 34 1100 34 S1160 60 1200 58"/>
+  </svg>
+</section>
+
+<section class="section intro">
+  <div class="wrap intro-grid">
+    <div class="prose">
+      <h2>What we do</h2>
+      {% for para in site.intro %}<p>{{ para }}</p>{% endfor %}
+      <p class="quiet-stats">{{ stats.publications }} publications, {{ stats.projects }} research projects, {{ stats.members }} current members and {{ stats.alumni }} alumni since 2023.</p>
+    </div>
+    <ul class="areas" aria-label="Research areas">
+      {% for area in site.research_areas %}
+      <li>
+        <a href="{{ url('research/') }}#{{ area.name | slugify }}">
+          <span class="area-name">{{ area.name }}</span>
+          <span class="area-text">{{ area.text }}</span>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="section featured">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Current projects</h2>
+      <a class="text-link" href="{{ url('research/') }}">All {{ stats.projects }} projects</a>
+    </div>
+    <div class="featured-grid">
+      {% for proj in projects if proj.images %}{% if loop.index <= 3 %}
+      <article class="feature">
+        <a class="feature-link" href="{{ url('research/' ~ proj.slug ~ '/') }}">
+          <img src="{{ img(proj.images[0].src) }}" alt="" loading="lazy">
+          <h3>{{ proj.short_title }}</h3>
+        </a>
+        <p>{{ proj.summary }}</p>
+        {% if proj.funding %}<p class="feature-meta">Funded by {{ proj.funding }}</p>{% endif %}
+      </article>
+      {% endif %}{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section updates">
+  <div class="wrap updates-grid">
+    <div>
+      <div class="section-head">
+        <h2>Latest news</h2>
+        <a class="text-link" href="{{ url('news/') }}">All news</a>
+      </div>
+      <ol class="news-list">
+        {% for n in news[:6] %}
+        <li>
+          <time datetime="{{ n.date.isoformat() }}">{{ n.date | date_long }}</time>
+          <p><span class="cat cat-{{ n.category | lower }}">{{ n.category }}</span> {{ n.text }}</p>
+        </li>
+        {% endfor %}
+      </ol>
+    </div>
+    <div>
+      <div class="section-head">
+        <h2>Recent publications</h2>
+        <a class="text-link" href="{{ url('publications/') }}">All publications</a>
+      </div>
+      <ol class="pub-list pub-list-compact">
+        {% for p in pubs if p.type == 'journal' %}{% if loop.index <= 4 %}{{ pub_entry(p, url, compact=true) }}{% endif %}{% endfor %}
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="section lab-film">
+  <div class="wrap film-grid">
+    <div>
+      <h2>{{ site.video.title }}</h2>
+      <p>Our lab occupies research space in the {{ site.contact.building }} on the UA campus, with wearable robots, ultrasound imaging, EMG and functional electrical stimulation systems, and robotic platforms for control research.</p>
+      <p><a class="text-link" href="{{ url('contact/') }}">Visit the lab</a></p>
+    </div>
+    <video controls preload="metadata" playsinline aria-label="{{ site.video.title }}">
+      <source src="{{ img(site.video.src) }}" type="video/mp4">
+      Your browser can't play this video. <a href="{{ img(site.video.src) }}">Download the video</a>.
+    </video>
+  </div>
+</section>
+
+<section class="section funders">
+  <div class="wrap">
+    <h2>Research support</h2>
+    <ul class="funder-list">
+      {% for f in site.funding %}
+      <li>
+        <span class="funder-name">{{ f.sponsor }}</span>
+        <span class="funder-project">{{ f.project }}{% if f.amount %}, {{ f.amount }}{% endif %} ({{ f.year }})</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="join-band">
+  <div class="wrap join-band-inner">
+    <div>
+      <h2>Build robots that help people move</h2>
+      <p>We have an open Ph.D. position, and we welcome UA undergraduates who want research experience.</p>
+    </div>
+    <a class="btn btn-light" href="{{ url('join/') }}">See open positions</a>
+  </div>
+</section>
+{% endblock %}

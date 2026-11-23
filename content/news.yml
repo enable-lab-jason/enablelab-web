@@ -1,0 +1,195 @@
+# ------------------------------------------------------------------
+# News items, newest first. Add a new item at the TOP of the list.
+# category: one of Award, Funding, Paper, People, Talk, Service
+# pub: (optional) a publication ID from publications.yml, e.g. J25
+# ------------------------------------------------------------------
+
+- date: 2026-11-11
+  category: Service
+  text: Dr. Zhang was appointed Associate Editor of IEEE Transactions on Automation Science and Engineering (T-ASE).
+
+- date: 2026-11-04
+  category: Funding
+  text: The lab received a $37,500 DHPRC Pilot & Feasibility grant to develop pressure injury monitoring with ultrasound.
+
+- date: 2026-09-15
+  category: Paper
+  text: Oluwasegun Akinniyi's first lead-author journal paper was accepted in the ASME Journal of Biomechanical Engineering.
+  pub: J26
+
+- date: 2026-09-07
+  category: Paper
+  text: Our paper on objective- and speed-agnostic human-in-the-loop reinforcement learning control of hip exoskeletons was published in IEEE T-ASE.
+  pub: J25
+
+- date: 2026-09-03
+  category: Award
+  text: The lab won a $25,000 Crimson Catalyst Pitch Competition award and the $10,000 People's Choice Award from the UA Division of Research.
+
+- date: 2026-08-14
+  category: People
+  text: Gazi Abdullah Mashud joined the lab as a Ph.D. student.
+
+- date: 2026-07-31
+  category: Funding
+  text: The lab received its first NSF award ($525,021) for FDT-BioTech, a digital twin for personalized stroke gait rehabilitation with lower-limb exoskeletons.
+
+- date: 2026-07-23
+  category: Service
+  text: Dr. Zhang was selected for the SEC Faculty Travel Program and ORED travel funding for 2026–2027.
+
+- date: 2026-06-23
+  category: Paper
+  text: Yun Chen's first lead-author journal paper, on continuous finger joint angle estimation, was published in IEEE TNSRE.
+  pub: J24
+
+- date: 2026-06-16
+  category: Paper
+  text: Yun Chen's paper on dynamic balance evaluation for hip exoskeleton-assisted walking was accepted at IROS 2026.
+  pub: C27
+
+- date: 2026-04-30
+  category: Funding
+  text: Our hybrid cycling rehabilitation training proposal was funded by the PVA Education Foundation (FY2026).
+
+- date: 2026-04-18
+  category: Paper
+  text: Our paper on adaptive optimal personalization control of hip exoskeleton assistance for people with paretic stroke was published in IEEE TBME.
+  pub: J23
+
+- date: 2026-04-16
+  category: People
+  text: Oluwasegun Akinniyi defended his dissertation and became the lab's first Ph.D. graduate.
+
+- date: 2026-04-10
+  category: Award
+  text: Yun Chen placed second in the poster competition at the 2026 Alabama AI Summit.
+
+- date: 2026-03-31
+  category: Award
+  text: Johnnie Reed received the Randall Outstanding Undergraduate Research Award.
+
+- date: 2026-02-28
+  category: Award
+  text: The lab received the STEM Engagement Award at the 2026 MATHCOUNTS Tuscaloosa event.
+
+- date: 2026-02-25
+  category: Award
+  text: Sandra Chisom Onyishi received the UA Undergraduate Student of the Year Award.
+
+- date: 2025-07-14
+  category: Paper
+  text: Our paper on estimating musculoskeletal torque from ultrasound images appeared in the EMBC 2025 proceedings.
+  pub: C24
+
+- date: 2025-07-11
+  category: Paper
+  text: Our paper on lower-limb muscle activity during waist-pull perturbations appeared in the ICORR 2025 proceedings.
+  pub: C23
+
+- date: 2025-05-20
+  category: Talk
+  text: Yun Chen presented at ICRA 2025.
+
+- date: 2025-05-19
+  category: Paper
+  text: Two papers appeared in the ICRA 2025 proceedings, on finger joint angle estimation with a CNN-LSTM network and on FrameCRL robot language planning.
+  pub: C22
+
+- date: 2025-05-13
+  category: Talk
+  text: Oluwasegun Akinniyi presented at ICORR 2025.
+
+- date: 2025-04-16
+  category: Paper
+  text: Our survey of reinforcement learning methods for assistive and rehabilitation robots was published in IEEE TSMC Systems.
+  pub: J22
+
+- date: 2025-04-15
+  category: Paper
+  text: A paper on the mechatronics design of a portable hip exoskeleton was published in IEEE T-MRB.
+  pub: J21
+
+- date: 2024-12-17
+  category: Paper
+  text: AnkleImage, our ultrafast ultrasound dataset of ankle muscle contractility, was published in Scientific Data.
+  pub: J20
+
+- date: 2024-12-05
+  category: Service
+  text: Dr. Zhang and the lab were featured in the ASME Dynamic Systems and Control Division newsletter.
+
+- date: 2024-10-30
+  category: Paper
+  text: Dr. Zhang's book chapter on wearable robots and machine learning was published.
+  pub: B1
+
+- date: 2024-10-28
+  category: Talk
+  text: The lab was highlighted at UA's 2024 Faculty Research Showcase.
+
+- date: 2024-09-18
+  category: Paper
+  text: Our paper on task-independent optimal adaptive control of a hip exoskeleton was published in IEEE TSMC Systems.
+  pub: J19
+
+- date: 2024-08-14
+  category: Service
+  text: Dr. Zhang was selected as Secretary Select of the ASME DSCD Mechatronics Technical Committee.
+
+- date: 2024-07-18
+  category: Service
+  text: Dr. Zhang was selected for SEC/ORED travel funding for 2024–2025.
+
+- date: 2024-06-28
+  category: Paper
+  text: Yun Chen's paper on ultrasound-based hand gesture recognition was accepted at MECC 2024.
+  pub: C20
+
+- date: 2024-05-24
+  category: Paper
+  text: Abstracts by Yun Chen and Sahar Ostadrahimi were accepted at ASB 2024.
+  pub: C19
+
+- date: 2024-05-22
+  category: Paper
+  text: Collaborator Fujian Yan's paper on learning motion primitives for mobility assessment was accepted in IEEE TBME.
+  pub: J18
+
+- date: 2024-04-21
+  category: Paper
+  text: Oluwasegun Akinniyi's paper on a cable-driven robotic waist assist device was accepted at AIM 2024.
+  pub: C16
+
+- date: 2024-01-30
+  category: Service
+  text: Dr. Zhang was appointed affiliated Assistant Professor in the Department of Chemical and Biological Engineering.
+
+- date: 2024-01-22
+  category: People
+  text: Yun Chen joined the lab as its second Ph.D. student.
+
+- date: 2024-01-03
+  category: Service
+  text: Dr. Zhang was appointed Associate Editor for BioRob 2024.
+
+- date: 2023-11-20
+  category: People
+  text: Oluwasegun Akinniyi joined the lab as its first Ph.D. student.
+
+- date: 2023-10-30
+  category: Talk
+  text: Dr. Zhang gave an oral presentation at the 2023 ACRM Annual Conference.
+
+- date: 2023-10-07
+  category: Service
+  text: Dr. Zhang was appointed to the technical committee of an automation and robotics conference.
+
+- date: 2023-10-03
+  category: Talk
+  text: Dr. Zhang gave two oral presentations at IROS 2023.
+  pub: C15
+
+- date: 2023-08-16
+  category: People
+  text: Dr. Zhang joined the UA Department of Mechanical Engineering as an Assistant Professor, and the ENABLE Lab opened.

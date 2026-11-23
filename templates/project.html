@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% from "macros.html" import pub_entry, figure with context %}
+{% block content %}
+<header class="page-head project-head">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <ol><li><a href="{{ url('research/') }}">Research</a></li><li aria-current="page">{{ project.short_title }}</li></ol>
+    </nav>
+    <p class="project-theme">{{ project.theme }}{% if project.status %}<span class="status">{{ project.status }}</span>{% endif %}</p>
+    <h1 class="project-h1">{{ project.title }}</h1>
+    <p class="lede">{{ project.summary }}</p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="wrap project-layout">
+    <div class="prose">
+      <h2>Overview</h2>
+      {% for para in project.description %}<p>{{ para }}</p>{% endfor %}
+      {% if project.aims %}
+      <h2>Objectives</h2>
+      <ul>{% for a in project.aims %}<li>{{ a }}</li>{% endfor %}</ul>
+      {% endif %}
+    </div>
+    <aside class="project-facts">
+      <dl>
+        <dt>Research area</dt><dd><a href="{{ url('research/') }}#{{ project.theme | slugify }}">{{ project.theme }}</a></dd>
+        {% if project.funding %}<dt>Funding</dt><dd>{{ project.funding }}</dd>{% endif %}
+        <dt>Principal investigator</dt><dd><a href="{{ url('people/') }}#qiang-zhang">Qiang (Jason) Zhang</a></dd>
+        {% if project.pubs %}<dt>Publications</dt><dd><a href="#related">{{ project.pubs | length }} related</a></dd>{% endif %}
+      </dl>
+      <a class="btn btn-ghost btn-block" href="{{ url('contact/') }}">Collaborate on this project</a>
+    </aside>
+  </div>
+</section>
+
+{% if project.images %}
+<section class="section figures">
+  <div class="wrap">
+    <h2>Figures</h2>
+    <div class="fig-grid fig-count-{{ project.images | length }}">
+      {% for image in project.images %}{{ figure(image, img) }}{% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% if project.pubs %}
+<section class="section" id="related">
+  <div class="wrap narrow">
+    <h2>Related publications</h2>
+    <ol class="pub-list">
+      {% for p in project.pubs %}{{ pub_entry(p, url) }}{% endfor %}
+    </ol>
+  </div>
+</section>
+{% endif %}
+
+<nav class="wrap project-pager" aria-label="More projects">
+  {% set idx = projects.index(project) %}
+  {% if idx > 0 %}{% set prev = projects[idx - 1] %}<a class="pager-prev" href="{{ url('research/' ~ prev.slug ~ '/') }}"><span>Previous project</span>{{ prev.short_title }}</a>{% else %}<span></span>{% endif %}
+  {% if idx < projects | length - 1 %}{% set nxt = projects[idx + 1] %}<a class="pager-next" href="{{ url('research/' ~ nxt.slug ~ '/') }}"><span>Next project</span>{{ nxt.short_title }}</a>{% endif %}
+</nav>
+{% endblock %}
+{% block scripts %}<script src="{{ url('js/publications.js') }}" defer></script>{% endblock %}

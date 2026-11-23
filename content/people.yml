@@ -1,0 +1,162 @@
+# ------------------------------------------------------------------
+# Lab members. Leave `photo:` empty to show an initials badge.
+# Links are optional: email, orcid, scholar, linkedin, github, website.
+# When someone graduates, move their entry to `alumni` at the bottom.
+# ------------------------------------------------------------------
+
+pi:
+  name: Qiang (Jason) Zhang, Ph.D.
+  slug: qiang-zhang
+  role: Principal Investigator
+  title: Assistant Professor, Department of Mechanical Engineering
+  affiliation: Affiliated Faculty, Department of Chemical and Biological Engineering, The University of Alabama
+  photo: https://sites.ua.edu/enablelab/files/2025/11/2411016_BH_162_Qiang_Zhang-1.jpg
+  bio:
+    - >-
+      Dr. Qiang (Jason) Zhang is an Assistant Professor of Mechanical
+      Engineering at The University of Alabama, with an affiliated appointment
+      in Chemical and Biological Engineering. He founded the ENABLE Lab in 2023.
+    - >-
+      Before joining UA, he was a postdoctoral fellow in the CLEAR group at the
+      joint Department of Biomedical Engineering of the University of North
+      Carolina at Chapel Hill and North Carolina State University.
+    - >-
+      His research covers advanced controls, wearable robotics, human
+      biomechanics, neuromuscular modeling and control, and biomedical
+      engineering.
+  education:
+    - Ph.D., Biomedical Engineering, University of North Carolina at Chapel Hill and North Carolina State University
+    - M.S., Mechanical Engineering, University of Pittsburgh
+    - M.S., Mechatronics Engineering, Wuhan University
+    - B.S., Mechanical Engineering, Wuhan University
+  service:
+    - Associate Editor, IEEE Transactions on Automation Science and Engineering (2026–)
+    - Secretary Select, ASME DSCD Mechatronics Technical Committee (2024)
+    - Associate Editor, IEEE BioRob 2024
+  links:
+    email: qiang.zhang@ua.edu
+    cv: https://alabama.box.com/s/n8xydjduyz34s6ciingbysml67mmcjz3
+    orcid: https://orcid.org/0000-0002-8806-9672
+    scholar: https://scholar.google.com/citations?user=FczBCGAAAAAJ&hl=en
+    researchgate: https://www.researchgate.net/profile/Qiang-Zhang-37
+
+groups:
+  - name: Ph.D. students
+    members:
+      - name: Yun Chen
+        joined: 2024
+        photo: https://sites.ua.edu/enablelab/files/2025/01/image.jpg
+        education:
+          - M.Sc., Mechanical Engineering, University of Hong Kong (2023)
+          - B.Sc., Theoretical and Applied Mechanics, Shanghai University (2021)
+        interests: Wearable robotics, reinforcement learning control, sonomyography–sEMG fusion, neuromusculoskeletal modeling, human–robot interaction, deep learning
+      - name: Gazi Abdullah Mashud
+        joined: 2026
+        photo: https://sites.ua.edu/enablelab/files/2026/08/d2f3a80e-4e8f-486f-adb0-1d979450305b.jpg
+        education:
+          - M.Sc., Mechanical Engineering, Miami University (2026)
+          - B.Sc., Robotics and Mechatronics Engineering, University of Dhaka (2023)
+        interests: Rehabilitation and wearable robotics, reinforcement learning control, adaptive control, simulation and modeling, human–robot interaction
+
+  - name: Master's students
+    members:
+      - name: Joshua Neil Voyer
+        photo: ""   # old site used a shared placeholder image
+        education:
+          - B.Sc., Mechanical Engineering, West Virginia University (2024)
+        interests: Human balance biomechanics, cable-driven rehabilitation robotics, human locomotion analysis
+
+  - name: Undergraduate researchers
+    members:
+      - name: Johnnie Reed
+        program: Aerospace Engineering and Mechanics; Blount Scholars Program
+        photo: https://sites.ua.edu/enablelab/files/2026/02/9e3bd35c-6da1-4a5e-83f1-eb85ea54fc35.jpg
+        interests: Deep learning and biomechanics for human balance recovery; bilateral hip exoskeleton control
+      - name: Tyler Foster
+        program: Mechanical Engineering
+        photo: ""
+        interests: Medical robotics, robotic ultrasound, rehabilitation robotics
+      - name: Jason Mun
+        program: Neuroscience, minor in Mechanical Engineering; Randall Research Scholars Program
+        photo: https://sites.ua.edu/enablelab/files/2026/08/Jason-Mun-1.jpg
+        interests: Rehabilitation robotics, functional electrical stimulation, fNIRS
+      - name: Anh Thu Nguyen
+        program: Computer Science
+        photo: ""
+        interests: Human–computer interfaces, pressure injury monitoring, computer vision, rehabilitation applications
+      - name: Valerii Ermoshkin
+        program: Electrical Engineering
+        photo: ""
+        interests: Brain–computer interfaces, neuroengineering, biomedical electronics, EEG/EMG processing, PCB design
+      - name: Maxwell Gainey
+        program: Mechanical Engineering
+        photo: https://sites.ua.edu/enablelab/files/2025/01/75157962247-ef4bd7fd-ef2e-4d26-a15e-8b3e3b1bd7bc.jpeg
+        interests: 3D modeling and data collection; human biomechanics
+      - name: Thomas Miller
+        program: Mechanical Engineering
+        photo: ""
+        interests: Upper-limb prosthetic design and control
+      - name: Kristina Hwangpo
+        program: Mechanical Engineering
+        photo: ""
+        interests: Biomechanics and prosthetics
+      - name: Rabi Balouch
+        program: Mechanical Engineering
+        photo: ""
+        interests: Biomechanical engineering applications
+
+# Add `years:` (e.g. 2023–2026) to each alumnus when known.
+alumni:
+  - name: Oluwasegun Akinniyi
+    degree: Ph.D.
+    now: Postdoctoral fellow and research scientist, Queen's University and Providence Care Hospital, Canada
+  - name: Michael Thompson
+    degree: M.S.
+    now: Mechanical engineer, AFL
+  - name: Scott Coughenour
+    degree: M.S.
+    now: Shriners Children's Hospital
+  - name: Kendrick Tate
+    degree: M.S.
+    now: Mechanical engineer, Garmin
+  - name: Matthew Grosman
+    degree: ""
+    now: Graduate research assistant, University of Tennessee Health Science Center
+  - name: Tanner Rogers
+    degree: B.S.
+    now: Transmission planning engineer, Southern Company
+  - name: Dawson Martin
+    degree: Undergraduate researcher
+    now: Mechanical Engineering, UA
+  - name: Lily Hopkins
+    degree: Undergraduate researcher
+    now: Mechanical Engineering, UA
+  - name: Trinity Tanner
+    degree: Undergraduate researcher
+    now: Electrical and Computer Engineering, UA
+  - name: Joslyn Bullington
+    degree: Undergraduate researcher
+    now: Mechanical Engineering, UA
+  - name: Liz Carey
+    degree: Undergraduate researcher
+    now: Mechanical Engineering, UA
+  - name: Lauren Jeffries
+    degree: Undergraduate researcher
+    now: Chemistry, UA
+  - name: Jacob Crocker
+    degree: Undergraduate researcher
+    now: Mechanical Engineering, UA
+
+# Names written in author lists that should be highlighted as lab members
+# on the Publications page.
+author_highlights:
+  - Q. Zhang
+  - Qiang Zhang
+  - Y. Chen
+  - Yun Chen
+  - O. Akinniyi
+  - Oluwasegun Akinniyi
+  - J. Reed
+  - M. Gainey
+  - G. A. Mashud
+  - S. Ostadrahimi

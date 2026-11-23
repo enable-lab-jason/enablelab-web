@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block content %}
+<header class="page-head">
+  <div class="wrap">
+    <h1>Research</h1>
+    <p class="lede">{{ research.overview }}</p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="wrap research-layout">
+    <aside class="research-aside">
+      <h2 class="aside-heading">Research directions</h2>
+      <ul class="direction-list">
+        {% for d in research.directions %}<li>{{ d }}</li>{% endfor %}
+      </ul>
+    </aside>
+
+    <div>
+      <div class="filter-bar" role="group" aria-label="Filter projects by research area">
+        <button type="button" class="chip" data-filter="all" aria-pressed="true">All areas</button>
+        {% for t in themes %}
+        <button type="button" class="chip" id="{{ t | slugify }}" data-filter="{{ t | slugify }}" aria-pressed="false">{{ t }}</button>
+        {% endfor %}
+      </div>
+      <p class="filter-count" role="status" aria-live="polite"><span data-count>{{ projects | length }}</span> projects</p>
+
+      <ol class="project-list">
+        {% for proj in projects %}
+        <li class="project-row" data-theme="{{ proj.theme | slugify }}" id="{{ proj.slug }}">
+          <div class="project-thumb">
+            {% if proj.images %}
+            <img src="{{ img(proj.images[0].src) }}" alt="" loading="lazy">
+            {% else %}
+            <span class="thumb-placeholder" aria-hidden="true">
+              <svg viewBox="0 0 120 60"><path d="M0 40 H30 L36 34 L40 46 L46 18 L52 50 L58 28 L64 40 H120" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+            </span>
+            {% endif %}
+          </div>
+          <div class="project-text">
+            <p class="project-theme">{{ proj.theme }}{% if proj.status %}<span class="status">{{ proj.status }}</span>{% endif %}</p>
+            <h2 class="project-title"><a href="{{ url('research/' ~ proj.slug ~ '/') }}">{{ proj.title }}</a></h2>
+            <p>{{ proj.summary }}</p>
+            <p class="project-meta">
+              {% if proj.funding %}<span>Funding: {{ proj.funding }}</span>{% endif %}
+              {% if proj.pubs %}<span>{{ proj.pubs | length }} related publication{{ 's' if proj.pubs | length > 1 }}</span>{% endif %}
+            </p>
+          </div>
+        </li>
+        {% endfor %}
+      </ol>
+    </div>
+  </div>
+</section>
+{% endblock %}
+{% block scripts %}<script src="{{ url('js/filters.js') }}" defer></script>{% endblock %}

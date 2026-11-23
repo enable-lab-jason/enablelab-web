@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page_title %}{{ page_title }} | {% endif %}{{ site.short_name }}, {{ site.university }}</title>
+  <meta name="description" content="{{ page_description }}">
+  <link rel="canonical" href="{{ canonical }}">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ site.short_name }}, {{ site.university }}">
+  <meta property="og:title" content="{{ page_title or site.full_name }}">
+  <meta property="og:description" content="{{ page_description }}">
+  <meta property="og:url" content="{{ canonical }}">
+  <meta property="og:image" content="{{ abs_img(site.hero_image.src) }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="{{ url('favicon.svg') }}" type="image/svg+xml">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.short_name }} news" href="{{ url('feed.xml') }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+  <link rel="stylesheet" href="{{ url('css/style.css') }}">
+  {% block head %}{% endblock %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ResearchOrganization",
+    "name": {{ (site.full_name ~ " (" ~ site.short_name ~ ")") | tojson }},
+    "url": {{ (site.url ~ "/") | tojson }},
+    "description": {{ site.description | tojson }},
+    "parentOrganization": {"@type": "CollegeOrUniversity", "name": {{ site.university | tojson }}},
+    "address": {"@type": "PostalAddress", "streetAddress": {{ site.contact.building | tojson }}, "addressLocality": "Tuscaloosa", "addressRegion": "AL", "postalCode": "35401", "addressCountry": "US"},
+    "email": {{ site.contact.email | tojson }},
+    "telephone": {{ site.contact.phone | tojson }},
+    "founder": {"@type": "Person", "name": "Qiang Zhang", "sameAs": [{{ site.profiles.orcid | tojson }}, {{ site.profiles.scholar | tojson }}]}
+  }
+  </script>
+</head>
+<body class="page-{{ current or 'home' }}">
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="{{ url('') }}">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" width="40" height="40"><rect width="40" height="40" rx="3" fill="#9E1B32"/><path d="M6 25h7l3-11 5 18 4-14 3 7h6" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-name">ENABLE Lab</span>
+          <span class="brand-sub">{{ site.department }}, {{ site.university }}</span>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+        <span class="nav-toggle-label">Menu</span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <ul>
+          {% for slug, label in [('research','Research'),('people','People'),('publications','Publications'),('teaching','Teaching'),('outreach','Outreach'),('news','News'),('join','Join us'),('contact','Contact')] %}
+          <li><a href="{{ url(slug ~ '/') }}"{% if current == slug %} aria-current="page"{% endif %}{% if slug == 'join' %} class="nav-join"{% endif %}>{{ label }}</a></li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div class="footer-about">
+        <p class="footer-name">{{ site.full_name }}</p>
+        <p>{{ site.department }}<br>{{ site.college }}, {{ site.university }}</p>
+        <p>{{ site.contact.building }}, {{ site.contact.lab }}<br>{{ site.contact.city }}</p>
+        <p><a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a><br><a href="tel:+1{{ site.contact.phone | replace('-', '') }}">{{ site.contact.phone }}</a></p>
+      </div>
+      <div>
+        <h2 class="footer-heading">Explore</h2>
+        <ul class="footer-links">
+          <li><a href="{{ url('research/') }}">Research</a></li>
+          <li><a href="{{ url('publications/') }}">Publications</a></li>
+          <li><a href="{{ url('people/') }}">People</a></li>
+          <li><a href="{{ url('join/') }}">Open positions</a></li>
+          <li><a href="{{ url('feed.xml') }}">News feed (RSS)</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="footer-heading">Scholarly profiles</h2>
+        <ul class="footer-links">
+          <li><a href="{{ site.profiles.scholar }}">Google Scholar</a></li>
+          <li><a href="{{ site.profiles.orcid }}">ORCID</a></li>
+          <li><a href="{{ site.profiles.researchgate }}">ResearchGate</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="footer-heading">Supported by</h2>
+        <ul class="footer-links footer-funders">
+          {% for f in site.funding %}<li>{{ f.sponsor }}</li>{% endfor %}
+        </ul>
+      </div>
+    </div>
+    <div class="wrap footer-base">
+      <p>&copy; {{ year }} {{ site.short_name }}, {{ site.university }}. Maintained by the lab; not an official university publication.</p>
+      <p>Last updated {{ built | date_long }}.</p>
+    </div>
+  </footer>
+  <script src="{{ url('js/site.js') }}" defer></script>
+  {% block scripts %}{% endblock %}
+</body>
+</html>

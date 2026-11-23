@@ -1,0 +1,262 @@
+# ------------------------------------------------------------------
+# Research projects. Each project gets its own page at /research/<slug>/
+#   theme:         one of the research areas in site.yml
+#   summary:       one sentence shown on the Research overview
+#   description:   paragraphs shown on the project page
+#   aims:          optional bullet list
+#   funding:       optional
+#   publications:  IDs from publications.yml (automatically listed)
+#   images:        src + alt (describe the image) + optional caption
+#   review: true   marks text written during the redesign that the PI
+#                  should check (it is NOT shown on the site)
+# ------------------------------------------------------------------
+
+directions:
+  - Dynamic system control
+  - Assistive and rehabilitative robotics
+  - Wearable robotics
+  - Human–robot interaction
+  - Neuromuscular modeling
+  - Functional electrical stimulation (FES)
+  - Motion intent detection
+  - Lyapunov-based and adaptive control
+  - Machine learning-based control
+  - sEMG and ultrasound signal processing
+  - Biomechanics of human movement
+
+overview: >-
+  The ENABLE Lab combines dynamic systems and control, biomechanics,
+  neuroscience and artificial intelligence to build wearable robots that
+  improve mobility, balance and rehabilitation, mainly for older adults and
+  people with neurological conditions. Our work spans human–machine
+  interaction, neuromuscular modeling and reinforcement learning-based control.
+
+projects:
+  - slug: fdt-biotech-digital-twin
+    title: "FDT-BioTech: Biosignals Fusion-Informed Neuromusculoskeletal Reconstruction in Immersive Digital Twin for Personalized Stroke Gait Rehabilitation Using Lower-Limb Exoskeletons"
+    short_title: FDT-BioTech digital twin for stroke gait rehabilitation
+    theme: Artificial intelligence
+    status: Active
+    summary: An immersive digital twin that personalizes lower-limb exoskeleton gait training after stroke.
+    description:
+      - >-
+        This NSF-funded project builds an immersive digital twin for
+        personalized post-stroke gait rehabilitation with lower-limb
+        exoskeletons. It combines neuromusculoskeletal modeling, ultrasound
+        and EMG biosignals, and safety-aware reinforcement learning.
+    aims:
+      - "Digital twin modeling: reconstruct each patient's neuromusculoskeletal system from fused ultrasound and EMG signals."
+      - "AI personalization: tune exoskeleton assistance with safety-aware reinforcement learning inside the digital twin."
+      - "Rehabilitation validation: evaluate the personalized assistance with people after stroke."
+    funding: National Science Foundation, $525,021 (awarded 2026)
+    publications: []
+    images: []
+
+  - slug: hybrid-cycling-rehabilitation
+    title: Hybrid Cycling Rehabilitation Training Using Functional Electrical Stimulation and Motorized Assistance
+    short_title: Hybrid FES cycling rehabilitation training
+    theme: Biomedical devices
+    status: Active
+    summary: Training materials that help people with spinal cord injury, caregivers and clinicians use motor-plus-FES cycling safely.
+    description:
+      - >-
+        This project develops a training program for people with spinal cord
+        injury or disease, their caregivers and clinicians on safely using a
+        hybrid cycling device that combines motorized assistance with
+        functional electrical stimulation.
+      - >-
+        Planned outputs include participant workbooks, caregiver guides,
+        clinician manuals, safety checklists and instructional videos, shared
+        with VA rehabilitation centers and clinical partners.
+    funding: Paralyzed Veterans of America Education Foundation (FY2026)
+    publications: []
+    images:
+      - src: https://sites.ua.edu/enablelab/files/2026/02/ChatGPT-Image-Feb-5-2026-02_30_00-PM-1024x579.png
+        alt: Concept illustration of hybrid FES and motorized cycling rehabilitation.
+        caption: Concept illustration.
+      - src: https://sites.ua.edu/enablelab/files/2026/02/ChatGPT-Image-Feb-5-2026-02_32_07-PM-1024x594.png
+        alt: Second concept illustration of hybrid cycling rehabilitation training.
+        caption: Concept illustration.
+
+  - slug: prosthetic-hand-finger-control
+    title: Neuromuscular Signal Fusion-Based Finger Movement Prediction and Control of Prosthetic Hands
+    short_title: Finger movement prediction for prosthetic hands
+    theme: Artificial intelligence
+    summary: Deep learning on ultrasound and sEMG signals to recognize gestures and predict continuous finger motion.
+    review: true
+    description:
+      - >-
+        We predict finger movements from fused neuromuscular signals to
+        control prosthetic hands. Deep learning recognizes discrete finger
+        gestures from forearm ultrasound images, and sEMG–ultrasound fusion
+        with transfer learning predicts continuous finger joint motion.
+    publications: [J24, C22, C20, C19]
+    images:
+      - src: https://sites.ua.edu/enablelab/files/2026/02/image-1-1024x425.png
+        alt: "Figure: discrete finger gesture recognition from ultrasound images using deep learning."
+        caption: Discrete finger gesture recognition from ultrasound images using deep learning.
+      - src: https://sites.ua.edu/enablelab/files/2026/02/image.png
+        alt: "Figure: continuous finger motion prediction from fused sEMG and ultrasound signals with transfer learning."
+        caption: Continuous finger motion prediction via sEMG–ultrasound fusion and transfer learning.
+
+  - slug: cable-driven-pelvic-robot
+    title: Modular Cable-Driven Pelvic Robot Development for Rehabilitation Training
+    short_title: Modular cable-driven pelvic robot
+    theme: Robotics and controls
+    summary: A modular cable-driven robot that applies controlled forces at the pelvis for balance and walking training.
+    review: true
+    description:
+      - >-
+        We are developing a modular, cable-driven robot that attaches at the
+        pelvis to assist and perturb balance and walking during rehabilitation
+        training. The platform also lets us study how leg muscles respond when
+        people recover from unexpected waist-pull perturbations.
+    publications: [C16, C23, J26]
+    images:
+      - src: https://sites.ua.edu/enablelab/files/2026/02/Experimental_study-1024x764.jpg
+        alt: Experimental study with the cable-driven pelvic robot.
+        caption: Experimental study with the cable-driven pelvic robot.
+      - src: https://sites.ua.edu/enablelab/files/2025/01/experimental-setup_orig-1024x486.jpg
+        alt: Experimental setup of the cable-driven pelvic robot.
+        caption: Experimental setup.
+
+  - slug: bilateral-hip-exoskeleton
+    title: Wearable Bilateral Hip Exoskeleton Development for Locomotion or Balance Assistance
+    short_title: Bilateral hip exoskeleton
+    theme: Wearable technologies
+    summary: A wearable exoskeleton that assists both hips during walking and balance recovery.
+    review: true
+    description:
+      - >-
+        We design and test a wearable exoskeleton that assists both hips to
+        support walking and to help people recover balance, and we evaluate
+        how its assistance affects lower-limb kinematics, kinetics and muscle
+        contractility.
+    publications: [C27, C18, J21]
+    images:
+      - src: https://sites.ua.edu/enablelab/files/2026/02/image-3-1024x509.jpg
+        alt: Bilateral hip exoskeleton.
+      - src: https://sites.ua.edu/enablelab/files/2026/02/image-2-197x300.png
+        alt: Hip exoskeleton, additional view.
+      - src: https://sites.ua.edu/enablelab/files/2026/02/image-3-222x300.jpg
+        alt: Hip exoskeleton, third view.
+
+  - slug: assistance-personalization-control
+    title: Assistance Personalization Control for Wearable Robotic Exoskeletons
+    short_title: Personalized exoskeleton assistance
+    theme: Robotics and controls
+    summary: Human-in-the-loop reinforcement learning and adaptive optimal control that tune exoskeleton assistance to each user.
+    review: true
+    description:
+      - >-
+        Every person walks differently, so fixed exoskeleton settings rarely
+        fit everyone. We develop controllers that personalize assistance to
+        each user, including human-in-the-loop reinforcement learning and
+        adaptive optimal control of hip exoskeletons for people with stroke
+        and other mobility impairments.
+    publications: [J25, J23, J19, J13, C15, B1]
+    images:
+      - src: https://sites.ua.edu/enablelab/files/2025/01/screenshot-2024-10-25-190351_orig.png
+        alt: Figure from the exoskeleton assistance personalization project.
+      - src: https://sites.ua.edu/enablelab/files/2026/02/image-3-1024x683.jpg
+        alt: Exoskeleton assistance personalization experiment.
+
+  - slug: ultrasound-semg-ankle-exoskeleton
+    title: Fused Ultrasound Imaging and sEMG-Based Control of a Cable-Driven Ankle Exoskeleton
+    short_title: Ultrasound and sEMG control of an ankle exoskeleton
+    theme: Wearable technologies
+    summary: Assist-as-needed ankle exoskeleton control driven by fused ultrasound and sEMG signals.
+    description:
+      - >-
+        We control a cable-driven ankle exoskeleton using muscle signals
+        measured with both ultrasound imaging and surface EMG.
+    aims:
+      - Assist-as-needed control through adaptive impedance control.
+      - Online fusion of sEMG and ultrasound sensor signals.
+      - Prediction of volitional plantarflexion torque with a Hill-type neuromuscular model.
+    publications: [J16, J12, J11]
+    images:
+      - src: https://sites.ua.edu/enablelab/files/2026/02/Picture1.png
+        alt: Cable-driven ankle exoskeleton controlled with fused ultrasound and sEMG.
+        caption: Cable-driven ankle exoskeleton with ultrasound and sEMG sensing.
+
+  - slug: ultrasound-fes-drop-foot
+    title: Ultrasound Imaging-Based Closed-Loop Control of FES for Drop Foot Correction
+    short_title: Ultrasound-based FES for drop foot
+    theme: Biomedical devices
+    summary: Closed-loop functional electrical stimulation guided by ultrasound imaging to correct drop foot.
+    description:
+      - >-
+        We use ultrasound imaging of the shank muscles to close the loop on
+        functional electrical stimulation for drop foot correction.
+    aims:
+      - A sampled-data observer for muscle state estimation.
+      - Compensation for FES delay.
+      - Reference trajectories generated with virtual constraints.
+      - PID-type dynamic surface control.
+    publications: [J15, C8, C7, C5]
+    images:
+      - src: https://sites.ua.edu/enablelab/files/2025/01/dropfoot.png
+        alt: "Figure: ultrasound imaging-based closed-loop FES control for drop foot correction."
+        caption: Ultrasound imaging-based closed-loop FES control.
+
+  - slug: robotic-ultrasound
+    title: AI-Driven Robotic Ultrasound System for Automated Neuromuscular and Cardiovascular Imaging and Assessment
+    short_title: AI-driven robotic ultrasound
+    theme: Biomedical devices
+    summary: A robot arm that positions an ultrasound probe automatically to image and assess muscles and blood vessels.
+    review: true
+    description:
+      - >-
+        We are developing an AI-driven robotic system that automates
+        ultrasound imaging and assessment of neuromuscular and cardiovascular
+        tissue.
+    publications: []
+    images:
+      - src: https://sites.ua.edu/enablelab/files/2026/02/ChatGPT-Image-Feb-5-2026-02_17_06-PM-1024x649.png
+        alt: Concept illustration of an AI-driven robotic ultrasound system.
+        caption: Concept illustration.
+
+  - slug: neuromuscular-feature-extraction
+    title: Neuromuscular Feature Extraction from sEMG and Ultrasound Imaging for Joint Function Characterization
+    short_title: Neuromuscular features from sEMG and ultrasound
+    theme: Artificial intelligence
+    summary: Extracting muscle features from sEMG and ultrasound to characterize joint function and predict joint moments.
+    review: true
+    description:
+      - >-
+        We extract neuromuscular features from surface EMG and ultrasound
+        images, such as muscle activation, pennation angle and echogenicity,
+        to characterize joint function, predict ankle joint moments and
+        monitor muscle fatigue. This work produced the open AnkleImage dataset.
+    publications: [J20, J17, J14, J11, J10, J8, J7, J5, C24, C13, C12, C10, C9, C6]
+    images:
+      - src: https://sites.ua.edu/enablelab/files/2025/01/neuromuscularfeatures.jpg
+        alt: "Figure: neuromuscular features extracted from sEMG and ultrasound imaging."
+        caption: Neuromuscular features extracted from sEMG and ultrasound imaging.
+      - src: https://sites.ua.edu/enablelab/files/2025/01/neuromuscularmodeling.jpg
+        alt: "Figure: neuromuscular modeling for joint function characterization."
+        caption: Neuromuscular modeling for joint function characterization.
+
+  - slug: robotic-platforms
+    title: Multiple Robotic Platforms for the Development of Control Approaches
+    short_title: Robotic platforms for control research
+    theme: Robotics and controls
+    summary: A Baxter manipulator, a Kinova arm and quadcopters used to develop and test control methods.
+    review: true
+    description:
+      - >-
+        Beyond wearable devices, the lab develops and tests control approaches
+        on several robotic platforms: a Baxter manipulator, a Kinova robotic
+        arm and quadcopters.
+    publications: []
+    images:
+      - src: https://sites.ua.edu/enablelab/files/2025/01/screenshot-2024-01-03-at-22-18-41.png
+        alt: Baxter robot manipulator.
+        caption: Baxter manipulator.
+      - src: https://sites.ua.edu/enablelab/files/2025/01/kinowa-oil.png
+        alt: Kinova robotic arm.
+        caption: Kinova arm.
+      - src: https://sites.ua.edu/enablelab/files/2025/01/drone-all-oil.png
+        alt: Quadcopters used for control research.
+        caption: Quadcopters.

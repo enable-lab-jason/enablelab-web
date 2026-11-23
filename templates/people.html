@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+{% from "macros.html" import avatar with context %}
+{% block head %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Qiang (Jason) Zhang",
+  "jobTitle": {{ people.pi.title | tojson }},
+  "affiliation": {"@type": "CollegeOrUniversity", "name": {{ site.university | tojson }}},
+  "email": {{ people.pi.links.email | tojson }},
+  "sameAs": [{{ people.pi.links.orcid | tojson }}, {{ people.pi.links.scholar | tojson }}, {{ people.pi.links.researchgate | tojson }}]
+}
+</script>
+{% endblock %}
+{% block content %}
+<header class="page-head">
+  <div class="wrap">
+    <h1>People</h1>
+    <p class="lede">Our team brings together mechanical, aerospace, electrical and computer engineering, computer science and neuroscience.</p>
+  </div>
+</header>
+
+{% set pi = people.pi %}
+<section class="section pi" id="qiang-zhang" aria-labelledby="pi-name">
+  <div class="wrap pi-grid">
+    <div class="pi-photo">{{ avatar(pi, img, 'lg') }}</div>
+    <div class="pi-text">
+      <p class="pi-role">{{ pi.role }}</p>
+      <h2 id="pi-name">{{ pi.name }}</h2>
+      <p class="pi-title">{{ pi.title }}<br>{{ pi.affiliation }}</p>
+      <ul class="profile-links">
+        <li><a href="mailto:{{ pi.links.email }}">Email</a></li>
+        <li><a href="{{ pi.links.cv }}">Curriculum vitae</a></li>
+        <li><a href="{{ pi.links.scholar }}">Google Scholar</a></li>
+        <li><a href="{{ pi.links.orcid }}">ORCID</a></li>
+        <li><a href="{{ pi.links.researchgate }}">ResearchGate</a></li>
+      </ul>
+      <div class="prose">{% for para in pi.bio %}<p>{{ para }}</p>{% endfor %}</div>
+      <div class="pi-columns">
+        <div>
+          <h3>Education</h3>
+          <ul class="plain-list">{% for e in pi.education %}<li>{{ e }}</li>{% endfor %}</ul>
+        </div>
+        <div>
+          <h3>Selected service</h3>
+          <ul class="plain-list">{% for s in pi.service %}<li>{{ s }}</li>{% endfor %}</ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% for group in people.groups %}
+<section class="section people-group" aria-labelledby="g-{{ group.name | slugify }}">
+  <div class="wrap">
+    <h2 id="g-{{ group.name | slugify }}">{{ group.name }}</h2>
+    <ul class="member-grid">
+      {% for m in group.members %}
+      <li class="member" id="{{ m.slug }}">
+        {{ avatar(m, img) }}
+        <div class="member-text">
+          <h3>{{ m.name }}</h3>
+          {% if m.joined %}<p class="member-meta">Joined {{ m.joined }}</p>{% endif %}
+          {% if m.program %}<p class="member-meta">{{ m.program }}</p>{% endif %}
+          {% if m.education %}<ul class="member-edu">{% for e in m.education %}<li>{{ e }}</li>{% endfor %}</ul>{% endif %}
+          <p class="member-interests"><span class="visually-hidden">Research interests: </span>{{ m.interests }}</p>
+          {% if m.links %}
+          <ul class="profile-links small">
+            {% for key, label in [('email','Email'),('orcid','ORCID'),('scholar','Scholar'),('github','GitHub'),('linkedin','LinkedIn'),('website','Website')] %}
+            {% if m.links[key] %}<li><a href="{{ ('mailto:' ~ m.links[key]) if key == 'email' else m.links[key] }}">{{ label }}<span class="visually-hidden"> for {{ m.name }}</span></a></li>{% endif %}
+            {% endfor %}
+          </ul>
+          {% endif %}
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+{% endfor %}
+
+<section class="section alumni" aria-labelledby="alumni-h">
+  <div class="wrap">
+    <h2 id="alumni-h">Alumni</h2>
+    <div class="table-wrap">
+      <table class="data-table">
+        <caption class="visually-hidden">Lab alumni and their current positions</caption>
+        <thead><tr><th scope="col">Name</th><th scope="col">Role in the lab</th><th scope="col">Current position</th></tr></thead>
+        <tbody>
+          {% for a in people.alumni %}
+          <tr><th scope="row">{{ a.name }}</th><td>{{ a.degree or '—' }}{% if a.years %} ({{ a.years }}){% endif %}</td><td>{{ a.now }}</td></tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+{% endblock %}

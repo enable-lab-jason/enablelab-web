@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block content %}
+<header class="page-head">
+  <div class="wrap">
+    <h1>Contact</h1>
+    <p class="lede">For research collaborations, media requests, outreach visits or graduate study, contact Dr. Zhang.</p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="wrap contact-grid">
+    <div class="contact-card">
+      <h2>{{ site.contact.name }}</h2>
+      <p>{{ site.contact.title }}</p>
+      <dl class="contact-list">
+        <dt>Email</dt><dd><a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></dd>
+        <dt>Phone</dt><dd><a href="tel:+1{{ site.contact.phone | replace('-', '') }}">{{ site.contact.phone }}</a></dd>
+        <dt>Office</dt><dd>{{ site.contact.office }}</dd>
+        <dt>Lab</dt><dd>{{ site.contact.lab }}</dd>
+        <dt>Building</dt><dd>{{ site.contact.building }}<br>{{ site.university }}<br>{{ site.contact.city }}</dd>
+      </dl>
+      <p><a class="btn btn-ghost" href="{{ site.contact.map_url }}">Open SERC in Google Maps</a></p>
+    </div>
+    <div>
+      <h2>Ways to get in touch</h2>
+      <ul class="route-list">
+        <li><h3>Prospective students</h3><p>See <a href="{{ url('join/') }}">open positions</a> for what to send.</p></li>
+        <li><h3>Research collaborators</h3><p>Email Dr. Zhang with a short description of the project and how it connects to our <a href="{{ url('research/') }}">research</a>.</p></li>
+        <li><h3>Schools and outreach</h3><p><a href="mailto:{{ site.contact.email }}?subject=Lab%20tour%20or%20STEM%20demo%20request">Request a lab tour or STEM demo</a>.</p></li>
+        <li><h3>Visiting the lab</h3><p>UA students are welcome to visit our research projects with Dr. Zhang's permission. Please email ahead to arrange a time.</p></li>
+      </ul>
+    </div>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,76 @@
+# ------------------------------------------------------------------
+# Courses taught by Dr. Zhang. Add a `description:` to any course to
+# show it on the Teaching page (descriptions were not on the old site).
+# terms: newest first; enrollment is shown in the teaching record table.
+# ------------------------------------------------------------------
+
+intro: >-
+  Dr. Zhang teaches undergraduate and graduate courses in dynamics, controls
+  and biomechanics in the Department of Mechanical Engineering, and advises
+  senior capstone design teams.
+
+courses:
+  - code: ME 372
+    title: Dynamic Systems
+    level: Undergraduate
+    institution: The University of Alabama
+    terms:
+      - {term: Fall 2026, enrollment: 46}
+
+  - code: ME 448/548
+    title: Biomechanics of Human Movements
+    level: Undergraduate and graduate
+    institution: The University of Alabama
+    terms:
+      - {term: Spring 2026, enrollment: 18}
+      - {term: Spring 2025, enrollment: 28}
+
+  - code: ME 475/575
+    title: Control Systems Analysis
+    level: Undergraduate and graduate
+    institution: The University of Alabama
+    terms:
+      - {term: Fall 2025, enrollment: 33}
+      - {term: Fall 2023, enrollment: 15}
+
+  - code: ME 577
+    title: Advanced Linear Control
+    level: Graduate
+    institution: The University of Alabama
+    terms:
+      - {term: Spring 2025, enrollment: 32}
+
+  - code: ME 489
+    title: Capstone Senior Design I
+    level: Undergraduate
+    institution: The University of Alabama
+    terms:
+      - {term: Fall 2026, enrollment: 5}
+      - {term: Fall 2025, enrollment: 6}
+      - {term: Spring 2025, enrollment: 5}
+      - {term: Spring 2024, enrollment: 4}
+      - {term: Fall 2023, enrollment: 5}
+
+  - code: ME 490
+    title: Capstone Senior Design II
+    level: Undergraduate
+    institution: The University of Alabama
+    terms:
+      - {term: Spring 2026, enrollment: 6}
+      - {term: Fall 2025, enrollment: 5}
+      - {term: Fall 2024, enrollment: 4}
+      - {term: Spring 2024, enrollment: 5}
+
+  - code: MEMS 1015
+    title: Rigid Body Dynamics
+    level: Undergraduate
+    institution: University of Pittsburgh
+    terms:
+      - {term: Spring 2018, enrollment: 120}
+
+  - code: MEMS 1042
+    title: Mechanical Measurements 2
+    level: Undergraduate
+    institution: University of Pittsburgh
+    terms:
+      - {term: Fall 2017, enrollment: 60}

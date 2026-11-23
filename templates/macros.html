@@ -1,0 +1,45 @@
+{# Reusable pieces shared by several pages. #}
+
+{% macro pub_entry(p, url, compact=false) %}
+<li class="pub" id="{{ p.id }}" data-type="{{ p.type }}" data-year="{{ p.year }}"
+    data-projects="{{ p.projects | map(attribute='slug') | join(' ') }}"
+    data-search="{{ (p.id ~ ' ' ~ p.title ~ ' ' ~ p.authors ~ ' ' ~ p.venue ~ ' ' ~ p.year) | lower }}">
+  <span class="pub-id">{{ p.id }}</span>
+  <div class="pub-body">
+    <p class="pub-title">{% if p.link %}<a href="{{ p.link }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}</p>
+    <p class="pub-authors">{{ p.authors_html }}</p>
+    <p class="pub-venue"><cite>{{ p.venue }}</cite>{% if p.details %}, {{ p.details }}{% endif %}, {{ p.year }}.
+      {% if p.status == 'accepted' %}<span class="tag tag-accepted">Accepted</span>{% endif %}
+      {% if p.note %}<span class="tag">{{ p.note }}</span>{% endif %}
+    </p>
+    {% if not compact %}
+    <div class="pub-actions">
+      {% if p.doi %}<a class="pub-btn" href="https://doi.org/{{ p.doi }}">DOI<span class="visually-hidden"> for {{ p.id }}</span></a>{% elif p.url %}<a class="pub-btn" href="{{ p.url }}">Publisher page<span class="visually-hidden"> for {{ p.id }}</span></a>{% endif %}
+      {% for key, label in [('pdf','PDF'),('code','Code'),('data','Data'),('video','Video')] %}{% if p[key] %}<a class="pub-btn" href="{{ p[key] }}">{{ label }}</a>{% endif %}{% endfor %}
+      <button class="pub-btn pub-cite" type="button" aria-expanded="false" aria-controls="bib-{{ p.id }}">Cite</button>
+      {% for proj in p.projects %}<a class="pub-project" href="{{ url('research/' ~ proj.slug ~ '/') }}">{{ proj.title }}</a>{% endfor %}
+    </div>
+    <div class="bibtex" id="bib-{{ p.id }}" hidden>
+      <pre><code>{{ p.bibtex }}</code></pre>
+      <button class="pub-btn copy-bib" type="button">Copy BibTeX</button>
+      <span class="copy-status" role="status"></span>
+    </div>
+    {% endif %}
+  </div>
+</li>
+{% endmacro %}
+
+{% macro avatar(person, img, size='md') %}
+{% if person.photo %}
+<img class="avatar avatar-{{ size }}" src="{{ img(person.photo) }}" alt="Portrait of {{ person.name }}" loading="lazy" width="320" height="320">
+{% else %}
+<span class="avatar avatar-{{ size }} avatar-initials" aria-hidden="true">{{ person.initials }}</span>
+{% endif %}
+{% endmacro %}
+
+{% macro figure(image, img, cls='') %}
+<figure class="fig {{ cls }}">
+  <img src="{{ img(image.src) }}" alt="{{ image.alt }}" loading="lazy">
+  {% if image.caption %}<figcaption>{{ image.caption }}</figcaption>{% endif %}
+</figure>
+{% endmacro %}

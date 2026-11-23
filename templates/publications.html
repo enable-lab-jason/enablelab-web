@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+{% from "macros.html" import pub_entry with context %}
+{% block head %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "ENABLE Lab publications",
+  "itemListElement": [
+    {% for p in pubs %}
+    {"@type": "ListItem", "position": {{ loop.index }}, "item": {
+      "@type": "ScholarlyArticle",
+      "headline": {{ p.title | tojson }},
+      "author": {{ p.authors | replace('*', '') | tojson }},
+      "datePublished": "{{ p.year }}",
+      "isPartOf": {{ p.venue | tojson }}{% if p.link %},
+      "url": {{ p.link | tojson }}{% endif %}{% if p.doi %},
+      "identifier": {"@type": "PropertyValue", "propertyID": "DOI", "value": {{ p.doi | tojson }}}{% endif %}
+    }}{{ "," if not loop.last }}
+    {% endfor %}
+  ]
+}
+</script>
+{% endblock %}
+{% block content %}
+<header class="page-head">
+  <div class="wrap">
+    <h1>Publications</h1>
+    <p class="lede">{{ pubs_intro }}</p>
+    <ul class="profile-links">
+      <li><a href="{{ site.profiles.scholar }}">Google Scholar</a></li>
+      <li><a href="{{ site.profiles.orcid }}">ORCID</a></li>
+      <li><a href="{{ site.profiles.researchgate }}">ResearchGate</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="section">
+  <div class="wrap pubs-layout">
+    <form class="pub-filters" role="search" aria-label="Filter publications" onsubmit="return false">
+      <div class="field">
+        <label for="pub-search">Search</label>
+        <input id="pub-search" type="search" placeholder="Title, author, venue or year" autocomplete="off">
+      </div>
+      <fieldset class="field">
+        <legend>Type</legend>
+        <label class="check"><input type="radio" name="ptype" value="all" checked> All <span class="n">{{ pubs | length }}</span></label>
+        <label class="check"><input type="radio" name="ptype" value="journal"> Journal articles <span class="n">{{ pubs | selectattr('type', 'equalto', 'journal') | list | length }}</span></label>
+        <label class="check"><input type="radio" name="ptype" value="conference"> Conference papers <span class="n">{{ pubs | selectattr('type', 'equalto', 'conference') | list | length }}</span></label>
+        <label class="check"><input type="radio" name="ptype" value="chapter"> Book chapters <span class="n">{{ pubs | selectattr('type', 'equalto', 'chapter') | list | length }}</span></label>
+      </fieldset>
+      <div class="field">
+        <label for="pub-year">Year</label>
+        <select id="pub-year">
+          <option value="all">All years</option>
+          {% for y in pubs | map(attribute='year') | unique | sort(reverse=true) %}<option value="{{ y }}">{{ y }}</option>{% endfor %}
+        </select>
+      </div>
+      <div class="field">
+        <label for="pub-project">Project</label>
+        <select id="pub-project">
+          <option value="all">All projects</option>
+          {% for proj in projects if proj.pubs %}<option value="{{ proj.slug }}">{{ proj.short_title }}</option>{% endfor %}
+        </select>
+      </div>
+      <p class="legend-note"><strong class="lab-author">Bold</strong> names are ENABLE Lab members. <span class="corr">*</span> marks the corresponding author.</p>
+      <button type="button" class="btn btn-ghost btn-small" id="pub-reset">Clear filters</button>
+    </form>
+
+    <div>
+      <p class="filter-count" role="status" aria-live="polite">Showing <span data-count>{{ pubs | length }}</span> of {{ pubs | length }} publications</p>
+      {% for ptype, heading in [('journal', 'Journal articles'), ('conference', 'Conference papers'), ('chapter', 'Book chapters')] %}
+      <section class="pub-section" data-section="{{ ptype }}">
+        <h2>{{ heading }}</h2>
+        {% for year, items in pubs | selectattr('type', 'equalto', ptype) | groupby('year') | reverse %}
+        <div class="pub-year" data-year-group="{{ year }}">
+          <h3>{{ year }}</h3>
+          <ol class="pub-list">{% for p in items %}{{ pub_entry(p, url) }}{% endfor %}</ol>
+        </div>
+        {% endfor %}
+      </section>
+      {% endfor %}
+      <p class="empty-state" hidden>No publications match these filters. <button type="button" class="link-button" data-reset>Clear filters</button> to see all {{ pubs | length }}.</p>
+    </div>
+  </div>
+</section>
+{% endblock %}
+{% block scripts %}<script src="{{ url('js/publications.js') }}" defer></script>{% endblock %}

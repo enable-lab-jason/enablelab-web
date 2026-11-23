@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block content %}
+<header class="page-head">
+  <div class="wrap">
+    <h1>Join us</h1>
+    <p class="lede">{{ site.join.intro }}</p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="wrap join-grid">
+    <div>
+      <h2>Open positions</h2>
+      {% for pos in site.join.positions %}
+      <article class="position">
+        <h3>{{ pos.title }}</h3>
+        <p>{{ pos.text }}</p>
+      </article>
+      {% endfor %}
+      <h3>What to include in your email</h3>
+      <ul class="check-list">{% for item in site.join.email_checklist %}<li>{{ item }}</li>{% endfor %}</ul>
+      <p><a class="btn btn-primary" href="mailto:{{ site.contact.email }}?subject=Prospective%20Ph.D.%20student%20inquiry">Email Dr. Zhang</a></p>
+
+      <h2>Current UA students</h2>
+      <p>{{ site.join.current_students }}</p>
+    </div>
+    <aside class="join-aside">
+      <h2 class="aside-heading">Before you write</h2>
+      <p>Read about our <a href="{{ url('research/') }}">research projects</a> and recent <a href="{{ url('publications/') }}">publications</a>, and mention the ones that match your interests.</p>
+      <p>See where our <a href="{{ url('people/') }}#alumni-h">alumni</a> went after the lab.</p>
+    </aside>
+  </div>
+</section>
+{% endblock %}

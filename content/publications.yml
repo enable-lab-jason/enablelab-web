@@ -1,0 +1,435 @@
+# ------------------------------------------------------------------
+# Publications. Add new papers at the TOP of the right section.
+#   id:      B# (book chapter), J# (journal), C# (conference) — keep unique
+#   authors: as printed; * marks the corresponding author
+#   status:  "accepted" until volume/pages are known
+#   doi:     preferred link (without https://doi.org/)
+#   url:     publisher link when no DOI is known
+#   code / data / pdf / video: optional extra links shown as buttons
+# Project pages list a paper automatically when its ID appears in that
+# project's `publications:` list in projects.yml.
+# ------------------------------------------------------------------
+
+intro: >-
+  Selected publications from the ENABLE Lab and Dr. Zhang's earlier work.
+  For a complete and current list, see Google Scholar, ORCID or ResearchGate.
+
+chapters:
+  - id: B1
+    authors: Q. Zhang*, Z. Damiano, M. Sharifi, M. Kim, and Z. Li
+    title: "Closing the Loop Between Wearable Robots and Machine Learning: A New Paradigm for Steering Assistance Personalization Control"
+    venue: "Discovering the Frontiers of Human-Robot Interaction: Insights and Innovations in Collaboration, Communication, and Control"
+    pages: "65"
+    publisher: Springer
+    year: 2024
+    doi: 10.1007/978-3-031-66656-8_4
+
+journals:
+  - id: J26
+    authors: O. Akinniyi, Y. Chen, J. Reed, P. Zhao, D. Martelli, and Q. Zhang*
+    title: Plantarflexor Activation and Muscle Architectural Responses During Reactive Stepping under Waist-Pull Perturbations
+    venue: ASME Journal of Biomechanical Engineering
+    year: 2026
+    status: accepted
+  - id: J25
+    authors: Q. Zhang* and Y. Chen
+    title: Objective- and Speed-Agnostic Human-in-the-Loop Reinforcement Learning Control of Hip Exoskeletons for Gait Assistance
+    venue: IEEE Transactions on Automation Science and Engineering
+    volume: "23"
+    pages: 16413–16427
+    year: 2026
+    url: https://ieeexplore.ieee.org/abstract/document/11683476
+  - id: J24
+    authors: Y. Chen, X. Zhang, H. He, L. Pu, W. Shou, and Q. Zhang*
+    title: Toward Sensor Fusion Neuromuscular Interface for Continuous Finger Joint Angle Estimation via Deep Transfer Learning
+    venue: IEEE Transactions on Neural Systems and Rehabilitation Engineering
+    volume: "34"
+    pages: 3119–3131
+    year: 2026
+    url: https://ieeexplore.ieee.org/abstract/document/11574757/
+  - id: J23
+    authors: Q. Zhang*, Y. Chen, M. Lewek, J. Si, and H. Huang
+    title: Towards Adaptive Optimal Personalization Control of Robotic Hip Exoskeleton Assistance for Individuals with Paretic Stroke
+    venue: IEEE Transactions on Biomedical Engineering
+    year: 2026
+    status: accepted
+    url: https://ieeexplore.ieee.org/abstract/document/11483321
+  - id: J22
+    authors: M. Sharifi*, S. Tripathi, Y. Chen, Q. Zhang, and M. Tavakoli
+    title: "Reinforcement Learning Methods for Assistive and Rehabilitation Robotic Systems: Survey"
+    venue: "IEEE Transactions on Systems, Man, and Cybernetics: Systems"
+    volume: "55"
+    issue: "7"
+    pages: 4534–4551
+    year: 2025
+    url: https://ieeexplore.ieee.org/abstract/document/10966209
+  - id: J21
+    authors: D. Rodriguez-Jorge, S. Zhang, J. S. Huang, I. Lopez-Sanchez, N. Srinivasan, Q. Zhang, X. Zhou, and H. Su
+    title: "Biomechanics-Informed Mechatronics Design of Comfort-Centered Portable Hip Exoskeleton: Actuator, Wearable Interface, Controller"
+    venue: IEEE Transactions on Medical Robotics and Bionics
+    volume: "7"
+    issue: "2"
+    pages: 687–698
+    year: 2025
+    url: https://ieeexplore.ieee.org/abstract/document/10964343
+  - id: J20
+    authors: Q. Zhang*, N. Hakam, O. Akinniyi, A. Iyer, X. Bao, and N. Sharma
+    title: AnkleImage – An Ultrafast Ultrasound Image Dataset to Understand the Ankle Joint Muscle Contractility
+    venue: Scientific Data
+    volume: "11"
+    issue: "1"
+    pages: "1439"
+    year: 2024
+    doi: 10.1038/s41597-024-04285-x
+    note: Open dataset
+  - id: J19
+    authors: Q. Zhang, J. Si, X. Tu, M. Li, M. D. Lewek, and H. Huang*
+    title: Toward Task-Independent Optimal Adaptive Control of a Hip Exoskeleton for Locomotion Assistance in Neurorehabilitation
+    venue: "IEEE Transactions on Systems, Man, and Cybernetics: Systems"
+    volume: "54"
+    issue: "12"
+    pages: 7592–7604
+    year: 2024
+    url: https://ieeexplore.ieee.org/abstract/document/10682783
+  - id: J18
+    authors: F. Yan, J. Gong, Q. Zhang, and H. He*
+    title: Learning Motion Primitives for the Quantification and Diagnosis of Mobility Deficits
+    venue: IEEE Transactions on Biomedical Engineering
+    volume: "71"
+    issue: "12"
+    pages: 3339–3349
+    year: 2024
+    url: https://ieeexplore.ieee.org/document/10536637
+  - id: J17
+    authors: X. Bao, Q. Zhang, N. Fragnito, J. Wang, and N. Sharma*
+    title: A Clustering-Based Method for Estimating Pennation Angle from B-Mode Ultrasound Images
+    venue: Wearable Technologies
+    volume: "4"
+    pages: e6
+    year: 2023
+    url: https://www.cambridge.org/core/journals/wearable-technologies/article/clusteringbased-method-for-estimating-pennation-angle-from-bmode-ultrasound-images/8415ABF323C20A6AB420DE43FB6F7F74
+  - id: J16
+    authors: Q. Zhang, K. Lambeth, Z. Sun, A. Dodson, X. Bao, and N. Sharma*
+    title: Evaluation of a Fused Sonomyography and Electromyography-Based Control on a Cable-Driven Ankle Exoskeleton
+    venue: IEEE Transactions on Robotics
+    volume: "39"
+    issue: "3"
+    pages: 2183–2202
+    year: 2023
+    url: https://ieeexplore.ieee.org/abstract/document/10041428
+  - id: J15
+    authors: Q. Zhang, K. Lambeth, A. Iyer, Z. Sun, and N. Sharma*
+    title: Ultrasound Imaging-Based Closed-Loop Control of Functional Electrical Stimulation for Drop Foot Correction
+    venue: IEEE Transactions on Control Systems Technology
+    volume: "31"
+    issue: "3"
+    pages: 989–1005
+    year: 2023
+    url: https://ieeexplore.ieee.org/document/9906589
+  - id: J14
+    authors: Q. Zhang, N. Fragnito, X. Bao, and N. Sharma*
+    title: "A Deep Learning Method to Predict Ankle Joint Moment during Versatile Walking Tasks with Ultrasound Imaging: A Framework for Assistive Devices Control"
+    venue: Wearable Technologies
+    volume: "3"
+    pages: e20
+    year: 2022
+    url: https://www.cambridge.org/core/journals/wearable-technologies/article/deep-learning-method-to-predict-ankle-joint-moment-during-walking-at-different-speeds-with-ultrasound-imaging-a-framework-for-assistive-devices-control/A022D7822770F8D34159E479474F966D
+  - id: J13
+    authors: Q. Zhang, V. Nalam, X. Tu, M. Li, J. Si, M. Lewek, and H. Huang*
+    title: Imposing Healthy Hip Movement Pattern and Range by Exoskeleton Control for Individualized Assistance
+    venue: IEEE Robotics and Automation Letters
+    volume: "7"
+    issue: "4"
+    pages: 11126–11133
+    year: 2022
+    url: https://ieeexplore.ieee.org/abstract/document/9849054
+  - id: J12
+    authors: Q. Zhang, A. Myers, N. Fragnito, J. R. Franz, and N. Sharma*
+    title: Fused Ultrasound and Electromyography-Driven Neuromuscular Model to Improve Plantarflexion Moment Prediction Across Walking Speeds
+    venue: Journal of NeuroEngineering and Rehabilitation
+    volume: "19"
+    pages: "86"
+    year: 2022
+    doi: 10.1186/s12984-022-01061-z
+  - id: J11
+    authors: Q. Zhang, W. H. Clark, J. R. Franz, and N. Sharma*
+    title: Personalized Fusion of Ultrasound and Electromyography-Derived Neuromuscular Features Increases Prediction Accuracy of Ankle Moment during Plantarflexion
+    venue: Biomedical Signal Processing and Control
+    volume: "71"
+    pages: "103100"
+    year: 2022
+    url: https://www.sciencedirect.com/science/article/pii/S1746809421006972
+  - id: J10
+    authors: Q. Zhang, A. Iyer, K. Lambeth, K. Kim, and N. Sharma*
+    title: Ultrasound Echogenicity as an Indicator of Muscle Fatigue during Functional Electrical Stimulation
+    venue: Sensors
+    volume: "22"
+    issue: "1"
+    pages: "335"
+    year: 2022
+    url: https://www.mdpi.com/1424-8220/22/1/335
+  - id: J9
+    authors: M. Vahidreza, Q. Zhang, X. Bao, and N. Sharma*
+    title: An Iterative Learning Controller for a Switched Cooperative Allocation Strategy During Sit-to-Stand Tasks with a Hybrid Exoskeleton
+    venue: IEEE Transactions on Control Systems Technology
+    volume: "30"
+    issue: "3"
+    pages: 1021–1036
+    year: 2022
+    url: https://ieeexplore.ieee.org/abstract/document/9474575
+  - id: J8
+    authors: Q. Zhang, A. Iyer, Z. Sun, K. Kim, and N. Sharma*
+    title: "A Dual-Modal Approach Using Electromyography and Sonomyography Improves Prediction of Dynamic Ankle Movement: A Case Study"
+    venue: IEEE Transactions on Neural Systems and Rehabilitation Engineering
+    volume: "29"
+    pages: 1944–1954
+    year: 2021
+    url: https://ieeexplore.ieee.org/abstract/document/9521161
+  - id: J7
+    authors: Q. Zhang, A. Iyer, K. Kim*, and N. Sharma*
+    title: Evaluation of Noninvasive Ankle Joint Effort Prediction Methods for Use in Neurorehabilitation Using Electromyography and Ultrasound Imaging
+    venue: IEEE Transactions on Biomedical Engineering
+    volume: "68"
+    issue: "3"
+    pages: 1044–1055
+    year: 2021
+    url: https://ieeexplore.ieee.org/abstract/document/9160868
+  - id: J6
+    authors: M. Vahidreza, Q. Zhang, X. Bao, B. Dicianno, and N. Sharma*
+    title: Shared Control of a Powered Exoskeleton and Functional Electrical Stimulation Using Iterative Learning and Fatigue Optimization
+    venue: Frontiers in Robotics and AI
+    volume: "8"
+    pages: "711388"
+    year: 2021
+    doi: 10.3389/frobt.2021.711388
+  - id: J5
+    authors: Q. Zhang, K. Kim*, and N. Sharma*
+    title: Prediction of Ankle Dorsiflexion Moment by Combined Ultrasound Sonography and Electromyography
+    venue: IEEE Transactions on Neural Systems and Rehabilitation Engineering
+    volume: "28"
+    issue: "1"
+    pages: 318–327
+    year: 2020
+    url: https://ieeexplore.ieee.org/abstract/document/8901165
+  - id: J4
+    authors: Q. Zhang, D. Sun, W. Qian, X. Xiao, and Z. Guo*
+    title: Modeling and Control of a Cable-Driven Rotary Series Elastic Actuator for an Upper Limb Rehabilitation Robot
+    venue: Frontiers in Neurorobotics
+    volume: "14"
+    pages: "13"
+    year: 2020
+    doi: 10.3389/fnbot.2020.00013
+  - id: J3
+    authors: Q. Zhang, Y. Wang, and X. H. Xiao*
+    title: Effects of Ground Compliance on Bipedal Robot Walking Dynamic Property
+    venue: Journal of the Chinese Society of Mechanical Engineers
+    volume: "37"
+    issue: "4"
+    pages: 335–342
+    year: 2016
+    url: https://www.airitilibrary.com/Article/Detail/02579731-201608-201609190035-201609190035-335-342
+  - id: J2
+    authors: Y. Wang, Q. Zhang, and X. H. Xiao*
+    title: Trajectory Tracking Control of the Bionic Joint Actuated by Pneumatic Artificial Muscle Based on Robust Modeling
+    venue: ROBOT
+    volume: "38"
+    issue: "2"
+    pages: 248–256
+    year: 2016
+    note: In Chinese
+    url: https://arxiv.org/abs/2208.07157
+  - id: J1
+    authors: Q. Zhang, X. H. Xiao*, Y. Wang, et al.
+    title: Compliant Joint for Biped Robot Considering Energy Consumption Optimization
+    venue: Journal of Central South University
+    volume: "46"
+    issue: "11"
+    pages: 4070–4076
+    year: 2015
+    note: In Chinese
+    url: https://www.researchgate.net/publication/290300423_Compliant_joint_for_biped_robot_considering_energy_consumption_optimization
+
+conferences:
+  - id: C27
+    authors: Y. Chen, O. Akinniyi, and Q. Zhang*
+    title: A Personalized Dynamic Balance Evaluation Paradigm for Hip Exoskeleton-Assisted Walking under Unexpected Ground Perturbations
+    venue: IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)
+    year: 2026
+    status: accepted
+  - id: C25
+    authors: M. Kim, S. Li, Y. Chen, H. Yoon*, and Q. Zhang
+    title: Human Detection and Localization in the Workplace Using a Single-Camera-Based Object Detection Algorithm
+    venue: ASME International Mechanical Engineering Congress and Exposition (IMECE)
+    volume: "89367"
+    pages: V005T08A066
+    year: 2025
+    url: https://asmedigitalcollection.asme.org/IMECE/proceedings-abstract/IMECE2025/89367/1231125
+  - id: C24
+    authors: X. Bao, Y. Chen, G. Fasipe, J. Wang, Q. Cheng, N. Sharma, and Q. Zhang*
+    title: Estimating Musculoskeletal Torque from Ultrasound Images with Regression and Sensor Alignment
+    venue: 47th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)
+    year: 2025
+    doi: 10.1109/EMBC58623.2025.11253702
+  - id: C23
+    authors: O. Akinniyi, M. Gainey, D. Martelli, and Q. Zhang*
+    title: Lower Limb Muscle Activities and Contractility during Stepping Response to Unexpected Waist-Pull Perturbations
+    venue: IEEE/RAS-EMBS International Conference on Rehabilitation Robotics (ICORR)
+    year: 2025
+    doi: 10.1109/ICORR66766.2025.11063075
+  - id: C22
+    authors: Y. Chen, X. Zhang, H. Li, H. He, and Q. Zhang*
+    title: "Towards Neurorobotic Interface for Finger Joint Angle Estimation: A Multi-Stage CNN-LSTM Network with Transfer Learning"
+    venue: IEEE International Conference on Robotics and Automation (ICRA)
+    year: 2025
+    doi: 10.1109/ICRA55743.2025.11127944
+  - id: C21
+    authors: D. Tran, F. Yan, Q. Zhang, Y. Zhang, and H. He*
+    title: Controlled Robot Language with Frame Semantics (FrameCRL) for Autonomous Context-Aware High-Level Planning
+    venue: IEEE International Conference on Robotics and Automation (ICRA)
+    year: 2025
+    doi: 10.1109/ICRA55743.2025.11127391
+  - id: C20
+    authors: Y. Chen, X. Bao, H. He, and Q. Zhang*
+    title: "Enhancing Prosthetic Control with Ultrasound Imaging: A Convolutional Neural Network Approach for Hand Gesture Recognition"
+    venue: IFAC-PapersOnLine (Modeling, Estimation and Control Conference, MECC)
+    volume: "58"
+    issue: "28"
+    pages: 528–533
+    year: 2024
+    url: https://www.sciencedirect.com/science/article/pii/S2405896325000199
+  - id: C19
+    authors: Y. Chen and Q. Zhang*
+    title: "Enhancing Prosthetic Control with Ultrasound Imaging: A Convolutional Neural Network Approach for Real-Time Hand Gesture Recognition"
+    venue: American Society of Biomechanics Annual Meeting (ASB)
+    year: 2024
+    note: Abstract
+  - id: C18
+    authors: Q. Zhang*, S. Ostadrahimi, and H. Su
+    title: Assessment of Wearable Hip Exoskeleton Impedance Control on Human Lower-Limb Kinematics, Kinetics, and Muscle Contractility During Walking
+    venue: American Society of Biomechanics Annual Meeting (ASB)
+    year: 2024
+    note: Abstract
+  - id: C17
+    authors: E. Saldajeno, P. Portillo, Q. Zhang, and M. Sharifi*
+    title: Mechatronics and Control System Design of a Bimanual Hand Exoskeleton with a Sensorized Soft Glove
+    venue: IEEE/ASME International Conference on Advanced Intelligent Mechatronics (AIM)
+    year: 2024
+    url: https://ieeexplore.ieee.org/abstract/document/10637154
+  - id: C16
+    authors: O. Akinniyi, M. Sharifi, D. Martelli, and Q. Zhang*
+    title: Development and Control of a Cable-Driven Robotic Waist Assist Device for Balance and Walking Function Enhancement
+    venue: IEEE/ASME International Conference on Advanced Intelligent Mechatronics (AIM)
+    pages: 447–452
+    year: 2024
+    url: https://ieeexplore.ieee.org/abstract/document/10637067
+  - id: C15
+    authors: Q. Zhang, X. Tu, J. Si, M. Lewek, and H. Huang*
+    title: A Robotic Assistance Personalization Control Approach of Hip Exoskeletons for Gait Symmetry Improvement
+    venue: IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)
+    pages: 6125–6132
+    year: 2023
+    url: https://ieeexplore.ieee.org/abstract/document/10341440
+  - id: C14
+    authors: A. Iyer, M. Singh, Q. Zhang, Z. Sun, and N. Sharma*
+    title: An Online Actor-Critic Identifier with Sampled Fatigue Measurements for Optimal Adaptive Control of FES and an Electric Motor
+    venue: IEEE Conference on Control Technology and Applications (CCTA)
+    pages: 714–719
+    year: 2022
+    url: https://ieeexplore.ieee.org/abstract/document/9966197
+  - id: C13
+    authors: Q. Zhang, A. Iyer, K. Lambeth, K. Kim, and N. Sharma*
+    title: Ultrasound Echogenicity-Based Assessment of Muscle Fatigue During Functional Electrical Stimulation
+    venue: Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)
+    pages: 5948–5952
+    year: 2021
+    url: https://ieeexplore.ieee.org/abstract/document/9630325
+  - id: C12
+    authors: Q. Zhang, N. Fragnito, A. Myers, and N. Sharma*
+    title: Plantarflexion Moment Prediction during the Walking Stance Phase with an sEMG-Ultrasound Imaging-Driven Model
+    venue: Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)
+    pages: 6267–6272
+    year: 2021
+    url: https://ieeexplore.ieee.org/abstract/document/9630046
+  - id: C11
+    authors: Z. Sun, X. Bao, Q. Zhang, K. Lambeth, and N. Sharma*
+    title: A Tube-Based Model Predictive Control Method for Joint Angle Tracking with Functional Electrical Stimulation and an Electric Motor Assist
+    venue: American Control Conference (ACC)
+    pages: 1390–1395
+    year: 2021
+    url: https://ieeexplore.ieee.org/abstract/document/9483084
+  - id: C10
+    authors: Q. Zhang, A. Iyer, K. Kim*, and N. Sharma*
+    title: Volitional Contractility Assessment of Plantar Flexors by Using Noninvasive Neuromuscular Measurements
+    venue: 8th IEEE RAS/EMBS International Conference for Biomedical Robotics and Biomechatronics (BioRob)
+    pages: 515–520
+    year: 2020
+    url: https://ieeexplore.ieee.org/document/9224298
+  - id: C9
+    authors: A. Iyer, Z. Sheng, Q. Zhang, K. Kim, and N. Sharma*
+    title: "Analysis of Tremor During Grasp Using Ultrasound Imaging: Preliminary Study"
+    venue: 8th IEEE RAS/EMBS International Conference for Biomedical Robotics and Biomechatronics (BioRob)
+    pages: 533–538
+    year: 2020
+    url: https://ieeexplore.ieee.org/document/9224446
+  - id: C8
+    authors: Q. Zhang, A. Iyer, Z. Sun, A. Dodson, and N. Sharma*
+    title: Sampled-Data Observer Based Dynamic Surface Control of Delayed Neuromuscular Functional Electrical Stimulation
+    venue: ASME Dynamic Systems and Control Conference (DSCC)
+    volume: "84270"
+    pages: V001T14A003
+    year: 2020
+    url: https://asmedigitalcollection.asme.org/DSCC/proceedings/DSCC2020/84270/V001T14A003/1096517
+  - id: C7
+    authors: Q. Zhang, A. Iyer, and N. Sharma*
+    title: "Ultrasound-Based Sensing and Control of Functional Electrical Stimulation for Ankle Joint Dorsiflexion: Preliminary Study"
+    venue: International Symposium on Wearable Robotics (WeRob)
+    publisher: Springer
+    year: 2020
+    doi: 10.1007/978-3-030-69547-7_50
+  - id: C6
+    authors: Q. Zhang, Z. Sheng, F. Moore-Clingenpeel, K. Kim, and N. Sharma*
+    title: Ankle Dorsiflexion Strength Monitoring by Combining Sonomyography and Electromyography
+    venue: IEEE International Conference on Rehabilitation Robotics (ICORR)
+    pages: 240–245
+    year: 2019
+    url: https://ieeexplore.ieee.org/abstract/document/8779530
+  - id: C5
+    authors: Q. Zhang, Z. Sheng, K. Kim, and N. Sharma*
+    title: Observer Design for a Nonlinear Neuromuscular System with Multi-Rate Sampled and Delayed Output Measurements
+    venue: American Control Conference (ACC)
+    pages: 872–877
+    year: 2019
+    url: https://ieeexplore.ieee.org/document/8814473
+  - id: C4
+    authors: V. Molazadeh, Q. Zhang, X. Bao, and N. Sharma*
+    title: Neural-Network Based Iterative Learning Control of a Hybrid Exoskeleton with an MPC Allocation Strategy
+    venue: ASME Dynamic Systems and Control Conference (DSCC)
+    volume: "59148"
+    pages: V001T05A011
+    year: 2019
+    url: https://asmedigitalcollection.asme.org/DSCC/proceedings/DSCC2019/59148/V001T05A011/1070507
+  - id: C3
+    authors: Q. Zhang, B. Xu, Z. Guo, and X. Xiao*
+    title: Design and Modeling of a Compact Rotary Series Elastic Actuator for an Elbow Rehabilitation Robot
+    venue: International Conference on Intelligent Robotics and Applications (ICIRA)
+    publisher: Springer
+    pages: 44–56
+    year: 2017
+    doi: 10.1007/978-3-319-65298-6_5
+  - id: C2
+    authors: Q. Zhang, X. Xiao*, and Z. Guo
+    title: Power Efficiency-Based Stiffness Optimization of a Compliant Actuator for Underactuated Bipedal Robot
+    venue: International Conference on Intelligent Robotics and Applications (ICIRA)
+    publisher: Springer
+    pages: 186–197
+    year: 2016
+    doi: 10.1007/978-3-319-43506-0_16
+  - id: C1
+    authors: Q. Zhang, L. Teng, Y. Wang, T. Xie, and X. Xiao*
+    title: A Study of Flexible Energy-Saving Joint for Biped Robots Considering the Sagittal Plane Motion
+    venue: Lecture Notes in Computer Science
+    volume: "9245"
+    publisher: Springer
+    pages: 333–344
+    year: 2015
+    doi: 10.1007/978-3-319-22876-1_29

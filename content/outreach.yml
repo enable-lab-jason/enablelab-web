@@ -1,0 +1,108 @@
+# ------------------------------------------------------------------
+# Education and outreach. Add new events at the TOP of `events`.
+#   kind: K-12 outreach | Student research | Award | Showcase
+#   participants: (optional) number of people reached
+#   images: src + alt. Please describe who/what is in each photo.
+# ------------------------------------------------------------------
+
+intro: >-
+  We share rehabilitation robotics with K-12 students, the UA community and
+  the public, and we involve undergraduates in our research. Schools and
+  groups can request a lab tour or STEM demonstration.
+
+programs:
+  - name: K-12 lab tours and STEM demonstrations
+    text: Hands-on demonstrations of wearable robots and biosignal sensing, including MATHCOUNTS STEM demos and visits to our lab in SERC.
+  - name: Engineering open houses
+    text: Lab members represent the ENABLE Lab at UA E-Day, which introduces students in grades 6–12 to engineering and computer science majors and careers.
+  - name: Undergraduate research
+    text: Undergraduates join lab projects through the Randall Research Scholars Program, the Blount Scholars Program and senior capstone design, and present at RRS Live and poster fairs.
+
+events:
+  - date: 2026-09
+    title: Crimson Catalyst Pitch Competition
+    kind: Award
+    text: The lab was one of three winners of the 2026 Crimson Catalyst Pitch Competition ($25,000) and also received the People's Choice Award ($10,000). We thank the UA Division of Research for its support.
+    images:
+      - {src: "https://sites.ua.edu/enablelab/files/2026/09/1789500171244.jpg", alt: "ENABLE Lab at the 2026 Crimson Catalyst Pitch Competition."}
+      - {src: "https://sites.ua.edu/enablelab/files/2026/09/Image_20260903203122_7_2-1-1024x768.jpg", alt: "Crimson Catalyst Pitch Competition award, 2026."}
+
+  - date: 2026-04
+    title: Alabama AI Summit
+    kind: Student research
+    text: Ph.D. student Yun Chen placed second in the poster competition at the 2026 Alabama AI Summit.
+    images:
+      - {src: "https://sites.ua.edu/enablelab/files/2026/04/Image-1024x585.jpg", alt: "Yun Chen at the 2026 Alabama AI Summit poster competition."}
+
+  - date: 2026-03
+    title: Randall Outstanding Undergraduate Research Award
+    kind: Award
+    text: Undergraduate researcher Johnnie Reed received the 2026 Randall Outstanding Undergraduate Research Award at The University of Alabama.
+    images:
+      - {src: "https://sites.ua.edu/enablelab/files/2026/04/JNPhoto_RSSAwardsLuncheon_2026-169-1024x681.jpg", alt: "Johnnie Reed at the 2026 Randall Research Scholars awards luncheon."}
+      - {src: "https://sites.ua.edu/enablelab/files/2026/04/JNPhoto_RSSAwardsLuncheon_2026-170-1024x681.jpg", alt: "Randall Research Scholars awards luncheon, 2026, photo 2."}
+      - {src: "https://sites.ua.edu/enablelab/files/2026/04/JNPhoto_RSSAwardsLuncheon_2026-192-1024x681.jpg", alt: "Randall Research Scholars awards luncheon, 2026, photo 3."}
+      - {src: "https://sites.ua.edu/enablelab/files/2026/04/JNPhoto_RSSAwardsLuncheon_2026-180-1024x681.jpg", alt: "Randall Research Scholars awards luncheon, 2026, photo 4."}
+
+  - date: 2026-02
+    title: MATHCOUNTS STEM Demo
+    kind: K-12 outreach
+    text: Johnnie Reed, Jason Mun and Kristina Hwangpo led the lab's demonstration at the 2026 MATHCOUNTS STEM Demo, where the lab received the STEM Engagement Award.
+    images:
+      - {src: "https://sites.ua.edu/enablelab/files/2026/02/Image_20260228160519_48_81-1024x768.jpg", alt: "ENABLE Lab demonstration at MATHCOUNTS 2026."}
+      - {src: "https://sites.ua.edu/enablelab/files/2026/02/Image_20260228160606_58_81-1024x768.jpg", alt: "MATHCOUNTS 2026 STEM demo, photo 2."}
+      - {src: "https://sites.ua.edu/enablelab/files/2026/02/Image_20260228160559_54_81-768x1024.jpg", alt: "MATHCOUNTS 2026 STEM demo, photo 3."}
+
+  - date: 2025-02
+    title: E-Day open house
+    kind: K-12 outreach
+    text: Johnnie Reed and Yun Chen represented the lab at the 2025 E-Day open house, which introduces students in grades 6–12 to engineering and computer science majors and careers.
+    images:
+      - {src: "https://sites.ua.edu/enablelab/files/2025/03/processed-8A336A2F-DC6B-41C5-B1BE-31A9EF260BCC-2-edited.jpeg", alt: "ENABLE Lab table at UA E-Day 2025."}
+      - {src: "https://sites.ua.edu/enablelab/files/2025/03/1610030_JH_29_EDay-1024x576.jpg", alt: "Students visiting at UA E-Day 2025."}
+
+  - date: 2024-12
+    title: RRS Live presentation
+    kind: Student research
+    text: Joslyn Bullington presented "Integration of Ultrasound Hand Gesture Recognition into Robotic Limb Control" on RRS Live, a broadcast series featuring Randall Research Scholars projects.
+    images:
+      - {src: "https://sites.ua.edu/enablelab/files/2025/01/1-1024x768.jpg", alt: "Joslyn Bullington presenting on RRS Live, December 2024."}
+      - {src: "https://sites.ua.edu/enablelab/files/2025/01/2-1024x768.jpg", alt: "RRS Live presentation, photo 2."}
+      - {src: "https://sites.ua.edu/enablelab/files/2025/01/3-1024x768.jpg", alt: "RRS Live presentation, photo 3."}
+
+  - date: 2024-12
+    title: Senior Design Poster Fair
+    kind: Student research
+    text: The lab took part in the Senior Design Poster Fair, and its senior design project won second prize in the poster competition.
+    images:
+      - {src: "https://sites.ua.edu/enablelab/files/2025/01/4-1024x768.jpg", alt: "Senior design team at the December 2024 poster fair."}
+      - {src: "https://sites.ua.edu/enablelab/files/2025/01/5-1024x768.jpg", alt: "Senior Design Poster Fair, photo 2."}
+      - {src: "https://sites.ua.edu/enablelab/files/2025/01/6-1024x768.jpg", alt: "Senior Design Poster Fair, photo 3."}
+
+  - date: 2024-11
+    title: K-12 lab tour
+    kind: K-12 outreach
+    text: The lab hosted K-12 students for a tour and hands-on demonstrations.
+    images:
+      - {src: "https://sites.ua.edu/enablelab/files/2025/01/9-1.jpg", alt: "K-12 students touring the ENABLE Lab, November 2024."}
+      - {src: "https://sites.ua.edu/enablelab/files/2025/01/9-2.jpg", alt: "K-12 lab tour, photo 2."}
+      - {src: "https://sites.ua.edu/enablelab/files/2025/01/10.jpg", alt: "K-12 lab tour, photo 3."}
+      - {src: "https://sites.ua.edu/enablelab/files/2025/01/11-1024x771.jpg", alt: "K-12 lab tour, photo 4."}
+      - {src: "https://sites.ua.edu/enablelab/files/2025/01/12.jpg", alt: "K-12 lab tour, photo 5."}
+      - {src: "https://sites.ua.edu/enablelab/files/2025/01/13.jpg", alt: "K-12 lab tour, photo 6."}
+
+  - date: 2024-10
+    title: UA Faculty Research Showcase
+    kind: Showcase
+    text: The lab demonstrated its research projects to the UA community at the 2024 Faculty Research Showcase.
+    images:
+      - {src: "https://sites.ua.edu/enablelab/files/2025/01/thumbnail-1731550407738_orig.jpg", alt: "ENABLE Lab at the 2024 UA Faculty Research Showcase."}
+
+  - date: 2024-02
+    title: MATHCOUNTS STEM Demo
+    kind: K-12 outreach
+    text: Oluwasegun Akinniyi and Yun Chen led the lab's demonstration at the 2024 MATHCOUNTS STEM Demo, a highlight of the competition for young participants.
+    images:
+      - {src: "https://sites.ua.edu/enablelab/files/2025/01/20.jpg", alt: "ENABLE Lab demonstration at MATHCOUNTS 2024."}
+      - {src: "https://sites.ua.edu/enablelab/files/2025/01/25.jpg", alt: "MATHCOUNTS 2024 STEM demo, photo 2."}
+      - {src: "https://sites.ua.edu/enablelab/files/2025/01/19.jpg", alt: "MATHCOUNTS 2024 STEM demo, photo 3."}

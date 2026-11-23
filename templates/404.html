@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<header class="page-head">
+  <div class="wrap narrow">
+    <h1>Page not found</h1>
+    <p class="lede">This address doesn't match a page on the ENABLE Lab site. If you followed a link from our old site, the page has moved.</p>
+    <ul class="route-list compact">
+      <li><a href="{{ url('') }}">Home</a></li>
+      <li><a href="{{ url('research/') }}">Research projects</a></li>
+      <li><a href="{{ url('people/') }}">Lab members</a></li>
+      <li><a href="{{ url('publications/') }}">Publications</a></li>
+      <li><a href="{{ url('contact/') }}">Contact us</a></li>
+    </ul>
+  </div>
+</header>
+{% endblock %}
