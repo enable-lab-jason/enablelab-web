@@ -93,21 +93,14 @@ old_site: https://sites.ua.edu/enablelab/
 # Join Us page
 join:
   intro: >-
-    We welcome motivated students who want to build robots that help people
-    move. Our team combines mechanical, electrical, biomedical and computer
+    We welcome motivated students who want to build robots, study controls, and understand human-robot interaction that will help people with 
+    mobility and balance challenges. Our team combines mechanical, electrical, biomedical, and computer
     engineering with neuroscience.
   positions:
-    - title: Ph.D. position (open)
+    - title: Ph.D. position (no opening position)
       text: >-
-        The ENABLE Lab currently has one open Ph.D. position. If you are
-        interested, email Dr. Zhang at qiang.zhang@ua.edu.
-  # The checklist below was added during the redesign — edit as needed.
-  email_checklist:
-    - Your CV
-    - A short statement of the research topics that interest you and the project(s) above that fit them
-    - Transcripts (unofficial copies are fine for a first contact)
+        The ENABLE Lab currently does not have open Ph.D. positions. 
+ 
   current_students: >-
     UA undergraduate and graduate students are welcome to visit our research
-    projects in the lab with Dr. Zhang's permission. Many of our undergraduate
-    researchers join through the Randall Research Scholars Program, the Blount
-    Scholars Program or senior capstone design.
+    projects in the lab with Dr. Zhang's permission.
