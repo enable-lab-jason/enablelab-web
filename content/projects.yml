@@ -72,11 +72,11 @@ projects:
     publications: []
     images:
       - src: images/FES-clcying.jpg
-        alt: Concept illustration of hybrid FES and motorized cycling rehabilitation.
-        caption: Concept illustration.
+        alt: Experimental illustration of hybrid FES and motorized cycling rehabilitation.
+        caption: Experimental illustration.
       - src: https://sites.ua.edu/enablelab/files/2026/02/ChatGPT-Image-Feb-5-2026-02_32_07-PM-1024x594.png
-        alt: Second concept illustration of hybrid cycling rehabilitation training.
-        caption: Concept illustration.
+        alt: Pilot results of hybrid cycling rehabilitation training.
+        caption: Results illustration.
 
   - slug: prosthetic-hand-finger-control
     title: Neuromuscular Signal Fusion-Based Finger Movement Prediction and Control of Prosthetic Hands
