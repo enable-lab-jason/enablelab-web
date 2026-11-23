@@ -47,7 +47,7 @@ research_areas:
 
 hero_image:
   src: images/LabSpace.png
-  alt: The ENABLE Lab research space in the Science and Engineering Research Center.
+  alt: The ENABLE Lab research space in the South Engineering Research Center.
 
 video:
   src: images/Media1.mp4
@@ -76,7 +76,7 @@ contact:
   title: Assistant Professor, Department of Mechanical Engineering; Affiliated Faculty, Department of Chemical and Biological Engineering
   office: SERC 3011
   lab: SERC 3041 and SERC 3032
-  building: Science and Engineering Research Center (SERC)
+  building: South Engineering Research Center (SERC)
   city: Tuscaloosa, AL 35401
   phone: 205-348-0643
   email: qiang.zhang@ua.edu
@@ -97,7 +97,7 @@ join:
     mobility and balance challenges. Our team combines mechanical, electrical, biomedical, and computer
     engineering with neuroscience.
   positions:
-    - title: Ph.D. position (no opening position)
+    - title: Ph.D. position (no open positions)
       text: >-
         The ENABLE Lab currently does not have open Ph.D. positions. 
  
